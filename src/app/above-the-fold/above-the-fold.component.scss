@@ -1,7 +1,36 @@
-.above-the-fold-container{
-    height: 100vh;
+.above-the-fold-container {
     width: 1440px;
-    background-color: aqua;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+    h1{
+        font-family: Anta;
+        font-size: 88px;
+        color: #F8F5EC;
+        text-align: center;
+    }
+   
+    h2{
+        font-family: Anta;
+        font-size: 40px;
+        color: #F8F5EC;
+        text-align: center;
+    }
+}
+
+.above-the-fold-portrait{
+    background-image: url('/img/abovethefold/Property 1=Default.png');
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 619px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+
+    img{
+        width: 500px;
+        height: 710px;
+    }
 }
