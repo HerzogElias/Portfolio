@@ -1,0 +1,47 @@
+.my-skills-component {
+    display: flex;
+    width: 1440px;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+
+    h3 {
+        font-family: Anta;
+        font-size: 60px;
+        font-weight: 400;
+        color: #89BCD9;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.my-skills-content {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.my-skills-icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+.my-skills-learningprogramming {
+    background-image: url('/img/myskills/Ellipse BG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+
+}

@@ -1,0 +1,17 @@
+<div class="my-skills-component">
+  <h3>My Skills</h3>
+
+  <div class="my-skills-content">
+    <div class="my-skills-icons">
+      @for (item of iconsFrondend; track $index) {
+      <div>
+        <img [src]="item" alt="Skill {$index}">
+      </div>
+      }
+    </div>
+
+    <div class="my-skills-learningprogramming">
+
+    </div>
+  </div>
+</div>
