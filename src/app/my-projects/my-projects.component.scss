@@ -1,0 +1,37 @@
+.my-projects-component {
+    display: flex;
+    width: 1440px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    h3 {
+        font-family: Anta;
+        font-size: 60px;
+        font-weight: 400;
+        color: #89BCD9;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.my-projects-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.my-projects-navbar{
+    width: 100%;
+    display: flex;
+    height: 125px;
+}
+
+.my-projects-projects{
+    background-color: #2D383F;
+    color: white;
+}
