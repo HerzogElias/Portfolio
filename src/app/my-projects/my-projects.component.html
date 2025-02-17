@@ -9,7 +9,12 @@
 
         <div class="my-projects-projects">
             <div class="my-projects-projects-description">
-                Round about but i can say i love you
+                    @for (item of projectnavbar; track $index) {
+                    <div>
+                  <p>"item"</p>
+                    </div>
+                    }
+                  </div>
             </div>
 
             <div class="my-projects-projects-images">
@@ -18,4 +23,3 @@
         </div>
     </div>
 
-</div>
