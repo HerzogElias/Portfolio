@@ -33,5 +33,13 @@
 
 .my-projects-projects{
     background-color: #2D383F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
 }
+
+.my-projects-projects-descriptio{
+    display: flex;
+}
+
