@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
-  @Input() projectname = '';
+  @Input() projectname:any ={};
+
 }

@@ -9,7 +9,7 @@ import { SingleProjectComponent } from "./single-project/single-project.componen
 })
 export class MyProjectsComponent {
 
-  selectedProject = 'Join';
+  selectedProject:object ={};
 
   projects = [{
     projectname: 'sharky',
@@ -41,7 +41,8 @@ export class MyProjectsComponent {
   projectnavbar: string[] = ['Join', 'Sharky']
 
 
-  setSelectedProject(projectname: string) {
-    this.selectedProject = projectname;
+  setSelectedProject(project: any) {
+    this.selectedProject = project; // ✅ Korrekt: Das gesamte Projekt speichern
+    console.log('Ausgewähltes Projekt:', this.selectedProject);
   }
 }
