@@ -2,25 +2,26 @@
     <h3>My Projects</h3>
     <div class="my-projects-content">
         <div class="my-projects-navbar">
-        <span>1. Sharky Game </span>
-        <span> 2. JOIN </span>
-        
+            <span>1. Sharky Game </span>
+            <span> 2. JOIN </span>
+
         </div>
 
         <div class="my-projects-projects">
             <div class="my-projects-projects-description">
-              @for (item of projectnavbar; track $index) {
-                <div (click)="setSelectedProject(item)">
-                  <p>{{item.projectname}^}</p>
+                @for (item of projectnavbar; track $index) {
+                <div>
+                    <p>{{item.projectname}</p>
                 </div>
-              }
-            </div>
-          </div>
-          
-
-            <div class="my-projects-projects-images">
-                <app-single-project [projectname]="selectedProject"></app-single-project>
+                }
             </div>
         </div>
-    </div>
 
+
+        <div>
+            @for (project of projects; track project.projectname) {
+            <app-single-project [project]="projects"></app-single-project>
+            }
+        </div>
+    </div>
+</div>

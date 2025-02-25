@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { SingleProjectComponent } from "./single-project/single-project.component";
 
+
+
 @Component({
   selector: 'app-my-projects',
   imports: [SingleProjectComponent],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
+
+
 export class MyProjectsComponent {
-
-  selectedProject:object ={};
-
-  projects = [{
+  projects:Projekt = [{
     projectname: 'sharky',
     content: {
       abouttheporject: 'Hier steht so zimlich alles was dem POrjekt zugute Kommt',
@@ -40,9 +41,4 @@ export class MyProjectsComponent {
 
   projectnavbar: string[] = ['Join', 'Sharky']
 
-
-  setSelectedProject(project: any) {
-    this.selectedProject = project; // ✅ Korrekt: Das gesamte Projekt speichern
-    console.log('Ausgewähltes Projekt:', this.selectedProject);
-  }
 }
