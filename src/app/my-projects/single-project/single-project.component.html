@@ -1,20 +1,14 @@
 <div class="single-project-content">
     <div>
-        {{project.content.abouttheporject}}
-        {{project.content.oranisation}}
-        {{project.content.whatilerned}}
-    </div>
-
-
-    <div>
+        @for (project of project; track project.projectname) {
+        {{project.content.aboutTheProject}}
+        {{project.content.organisation}}
+        {{project.content.whatILearned}}
         {{project.technologies}}
-        {{project.image}}
+        {{project.images}}
+        {{project.github}}
+        {{project.livetest}}
 
-        <div>
-            {{project.github}}
-            {{project.livetest}}
-        </div>
-
+        }
     </div>
-
 </div>

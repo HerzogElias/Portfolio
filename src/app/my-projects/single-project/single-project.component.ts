@@ -1,25 +1,24 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Projekt } from '../../interfaces/projects.interface';
 
 @Component({
   selector: 'app-single-project',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
-  @Input()  project:Projekt= {
+  @Input() project: Projekt = {
     projectname: 'sharky',
     content: {
-      abouttheporject: 'Hier steht so zimlich alles was dem POrjekt zugute Kommt',
-      oranisation: 'Scrum macht alles möglich',
-      whatilerned: 'To oraganise a project with scrum'
-
+      aboutTheProject: 'Hier',
+      organisation: 'Scrum macht alles möglich',
+      whatILearned: 'To organise a project with Scrum'
     },
-    technologies: 'Bild 1 und bild 2',
-    image: 'url to image',
+    technologies: ['Bild 1', 'Bild 2'],
+    images: ['url-to-image'],
     github: 'githublink',
     livetest: 'livetestlink'
-  }
-
+  };
 }
