@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SingleProjectComponent } from "./single-project/single-project.component";
+import { CommonModule } from '@angular/common';
 import { Projekt } from '../interfaces/projects.interface';
 
 
 @Component({
   selector: 'app-my-projects',
-  imports: [SingleProjectComponent],
+  imports: [SingleProjectComponent,CommonModule],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })

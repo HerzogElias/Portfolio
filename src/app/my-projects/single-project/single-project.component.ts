@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Projekt } from '../../interfaces/projects.interface';
+import { MyProjectsComponent } from '../my-projects.component';
 
 @Component({
   selector: 'app-single-project',
@@ -9,16 +10,5 @@ import { Projekt } from '../../interfaces/projects.interface';
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
-  @Input() project: Projekt = {
-    projectname: 'sharky',
-    content: {
-      aboutTheProject: 'Hier',
-      organisation: 'Scrum macht alles möglich',
-      whatILearned: 'To organise a project with Scrum'
-    },
-    technologies: ['Bild 1', 'Bild 2'],
-    images: ['url-to-image'],
-    github: 'githublink',
-    livetest: 'livetestlink'
-  };
+  project = input.required<Projekt>();
 }
