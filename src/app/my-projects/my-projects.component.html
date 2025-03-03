@@ -2,16 +2,13 @@
     <h3>My Projects</h3>
     <div class="my-projects-content">
         <div class="my-projects-navbar">
-            <span>1. Sharky Game </span>
-            <span> 2. JOIN </span>
-
         </div>
 
         <div class="my-projects-projects">
             <div class="my-projects-projects-description">
                 @for (item of projectnavbar; track $index) {
                 <div>
-                    <p>{{item.projectname}</p>
+                    <p (click)="changeIndex(1)">{{item}}</p>
                 </div>
                 }
             </div>
@@ -20,7 +17,7 @@
 
         <div>
             @for (project of projects; track project.projectname) {
-            <app-single-project [project]="project"></app-single-project>
+            <app-single-project [project]="activeProject"></app-single-project>
             }
         </div>
     </div>
