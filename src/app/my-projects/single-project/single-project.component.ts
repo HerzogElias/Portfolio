@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Projekt } from '../../interfaces/projects.interface';
 import { MyProjectsComponent } from '../my-projects.component';
@@ -10,5 +10,5 @@ import { MyProjectsComponent } from '../my-projects.component';
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
-  project = input.required<Projekt>();
+@Input() project!:Projekt;
 }

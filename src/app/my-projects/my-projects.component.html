@@ -8,7 +8,7 @@
             <div class="my-projects-projects-description">
                 @for (item of projectnavbar; track $index) {
                 <div>
-                    <p (click)="changeIndex(1)">{{item}}</p>
+                    <p (click)="changeIndex($index)">{{item}}</p>
                 </div>
                 }
             </div>
@@ -16,9 +16,9 @@
 
 
         <div>
-            @for (project of projects; track project.projectname) {
+        
             <app-single-project [project]="activeProject"></app-single-project>
-            }
+            
         </div>
     </div>
 </div>

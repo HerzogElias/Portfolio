@@ -1,22 +1,14 @@
-@let skills = project().technologies;
+<div class="single-project-content">
+ 
 
-<div class="single-project()-content">
-  <div>
+    <p>{{project.content.aboutTheProject}}</p>
+    <p>{{project.content.organisation}}</p>
+    <p>{{project.content.whatILearned}}</p>
+    <p>{{project.technologies}}</p>
+    <p>{{project.images}}</p>
 
-    <p>{{project().content.aboutTheProject}}</p>
-    <p>{{project().content.organisation}}</p>
-    <p>{{project().content.whatILearned}}</p>
-    <p>{{project().technologies}}</p>
-    <p>{{project().images}}</p>
+    <p>{{project.github}}</p>
+    <p>{{project.livetest}}</p>
 
-    <p>{{project().github}}</p>
-    <p>{{project().livetest}}</p>
-
-    @if(skills){
-    @for(skill of skills; track $index){
-    <p>{{skill}}</p>
-    }
-    }
-
-  </div>
 </div>
+
