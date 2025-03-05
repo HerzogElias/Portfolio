@@ -1,9 +1,6 @@
 <div class="my-projects-component">
     <h3>My Projects</h3>
     <div class="my-projects-content">
-        <div class="my-projects-navbar">
-        </div>
-
         <div class="my-projects-projects">
             <div class="my-projects-projects-description">
                 @for (item of projectnavbar; track $index) {
@@ -13,12 +10,8 @@
                 }
             </div>
         </div>
-
-
         <div>
-        
             <app-single-project [project]="activeProject"></app-single-project>
-            
         </div>
     </div>
 </div>
