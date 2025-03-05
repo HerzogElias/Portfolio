@@ -1,14 +1,16 @@
 <div class="single-project-content">
- 
 
-    <p>{{project.content.aboutTheProject}}</p>
-    <p>{{project.content.organisation}}</p>
-    <p>{{project.content.whatILearned}}</p>
-    <p>{{project.technologies}}</p>
-    <p>{{project.images}}</p>
-
-    <p>{{project.github}}</p>
-    <p>{{project.livetest}}</p>
-
+    <div class="single-project-description">
+        <p>{{project.content.aboutTheProject}}</p>
+        <p>{{project.content.organisation}}</p>
+        <p>{{project.content.whatILearned}}</p>
+    </div>
+    <div class="single-project-details">
+        <p>{{project.technologies}}</p>
+        <p>{{project.images}}</p>
+        <div class="single-project-test-project">
+            <p>{{project.github}}</p>
+            <p>{{project.livetest}}</p>
+        </div>
+    </div>
 </div>
-
