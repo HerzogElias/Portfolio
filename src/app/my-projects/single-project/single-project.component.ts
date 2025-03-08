@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Projekt } from '../../interfaces/projects.interface';
 import { MyProjectsComponent } from '../my-projects.component';
 
+
 @Component({
   selector: 'app-single-project',
   imports: [CommonModule],
