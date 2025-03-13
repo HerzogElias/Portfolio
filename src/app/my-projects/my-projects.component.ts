@@ -20,7 +20,6 @@ export class MyProjectsComponent {
       organisation: 'Durch eine Gruppenarbeit mit 3 Personen wurden die Aufgaben mit der Hilfe eines Scrum-Board gemanaged und regelmäßige Termine gefplegt',
       whatILearned: 'Druch das Projekt erste Berührungspunkte mit Firebase erhalten und zu lernen wie man ein Projekt mit der Scrum Mehtode managed'
     },
-    technologies: ['Firebase', 'CSS', 'Javascript'],
     images: ['/img/myskills/firebase.png', '/img/myskills/css.png', '/img/myskills/javascript.png'],
     github: 'github.com/herzogelias/join',
     livetest: 'join.elias-herzog.de'
@@ -32,7 +31,6 @@ export class MyProjectsComponent {
       organisation: 'Was soll ich hier reinschreiben ich weiß es noch nicht',
       whatILearned: 'Erste Tiefgehende Erfahrungen gesammelt in die Welt der Objetorientierten Javascript Programmeirung und mit Canvas'
     },
-    technologies: ['HTML', 'CSS', 'Javascript'],
     images: ['/img/myskills/html.png','/img/myskills/css.png', '/img/myskills/javascript.png' ],
     github: 'github.com/herzogelias/sharky',
     livetest: 'dukessharkygame.elias-herzog.de'

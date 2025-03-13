@@ -5,7 +5,6 @@ export interface Projekt {
       organisation: string;
       whatILearned: string;
     };
-    technologies: string[];
     images: string[];    
     github: string;
     livetest: string; 
