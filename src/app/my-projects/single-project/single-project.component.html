@@ -32,18 +32,24 @@
             </div>
         </div>
 
-    
 
         <div class="single-project-details">
             <p>Technologies</p>
-            <div> 
-
+            <div class="single-project-details-programmlanguage">
+                @for (item of project.images; track $index) {
+                    <img src="{{project.images[$index]}}" alt="Images Project Programmiersprachen">
+                    }
             </div>
+           
+            
+            <img src="{{project.imageProject}}" alt="Images Project Example">
+            
+            <a href="{{project.github}}" target="_blank" >
+                <img src="/img/myprojects/Button Secondary Web.png">
+            </a>
+
+            <a href ="{{project.livetest}}" target="_blank">
+                <img src="/img/myprojects/Button Primary Web.png">
+            </a>
         </div>
-
-
-
-
-
-
     </div>

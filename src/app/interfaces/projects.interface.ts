@@ -6,6 +6,7 @@ export interface Projekt {
       whatILearned: string;
     };
     images: string[];    
+    imageProject:string[],
     github: string;
     livetest: string; 
   }

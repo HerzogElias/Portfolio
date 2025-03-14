@@ -21,8 +21,9 @@ export class MyProjectsComponent {
       whatILearned: 'Druch das Projekt erste Berührungspunkte mit Firebase erhalten und zu lernen wie man ein Projekt mit der Scrum Mehtode managed'
     },
     images: ['/img/myskills/firebase.png', '/img/myskills/css.png', '/img/myskills/javascript.png'],
-    github: 'github.com/herzogelias/join',
-    livetest: 'join.elias-herzog.de'
+    imageProject: ['/img/myprojects/Join.jpg'],
+    github: 'https://github.com/HerzogElias/JOIN_KANBAN',
+    livetest: 'https://join.elias-herzog.de/'
   },
   {
     projectname: 'Sharky',
@@ -32,8 +33,9 @@ export class MyProjectsComponent {
       whatILearned: 'Erste Tiefgehende Erfahrungen gesammelt in die Welt der Objetorientierten Javascript Programmeirung und mit Canvas'
     },
     images: ['/img/myskills/html.png','/img/myskills/css.png', '/img/myskills/javascript.png' ],
-    github: 'github.com/herzogelias/sharky',
-    livetest: 'dukessharkygame.elias-herzog.de'
+    imageProject: ['/img/myprojects/Sharkygame.jpg'],
+    github: 'https://github.com/HerzogElias/Sharkie',
+    livetest: 'https://dukessharkygame.elias-herzog.de/'
   }
   ]
 
