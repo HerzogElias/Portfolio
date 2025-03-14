@@ -1,7 +1,12 @@
+.single-project-content{
+    display: flex;
+}
+
+
+
 .single-project-description-detail{
     display: flex;
     flex-direction: column;
-    
 
     h4 {
         font-size: 28px;
@@ -14,7 +19,6 @@
 
    
 }
-
 .single-project-description-detail-title{
     display: flex;
     align-items: center;
@@ -33,6 +37,25 @@
 
 .single-project-details{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+
+
+}
+
+.single-project-details-pictureProject{
+    width: 455px;
+    height: 315px;
+}
+
+.single-project-details-programmlanguage{
+    gap: 32px;
+   img{
+    gap: 32px;
+   }
+}
+
+.single-project-details-testingButtons{
+    display: flex;
+    gap: 32px;
 }
