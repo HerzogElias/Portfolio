@@ -1,3 +1,11 @@
-@for (item of rezessionen; track $index) {
-    {{rezessionen.name}}
-}
+    <div class="rezessionen-section">
+        @for (item of rezessionen; track item.name) {
+            <div class="rezessionen-content">
+                <p>{{item.name}} </p>
+                <p>{{item.projekt}}</p>
+                <span>{{item.rezession}}</span>
+                <a href ="{{item.linkedin}}"> Link to Linkedin</a>
+            </div>
+        }
+    </div>
+

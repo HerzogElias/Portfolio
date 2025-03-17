@@ -1,0 +1,25 @@
+.rezessionen-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 350px;
+}
+
+.rezessionen-content {
+    width: 400px;
+    height: 400px;
+    background-image: url('/img/whatmycolleguessay/whatmycolleguesy-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-top: 8px;
+    color: #F8F5EC;
+
+    span{
+       width: 350px;
+
+    }
+}
