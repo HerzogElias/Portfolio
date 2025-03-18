@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { AboveTheFoldComponent } from '../above-the-fold/above-the-fold.component';
 import { WhyMeComponent } from "../why-me/why-me.component";
 import { MySkillsComponent } from "../my-skills/my-skills.component";
@@ -13,5 +14,4 @@ import { ContactMeComponent } from "../contact-me/contact-me.component";
   styleUrl: './homepage.component.scss'
 })
 export class HomepageComponent {
-
 }
