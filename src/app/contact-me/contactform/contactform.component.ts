@@ -13,9 +13,9 @@ export class ContactformComponent {
   http=inject(HttpClient)
 
   contactData = {
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   }
   
   mailTest = true;
@@ -32,6 +32,7 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    console.log(this.contactData)
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
