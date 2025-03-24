@@ -18,7 +18,7 @@ export class ContactformComponent {
     message: "",
   }
   
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://elias-herzog.de/sendMail.php',
