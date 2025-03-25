@@ -1,8 +1,10 @@
 .above-the-fold-container {
     width: 1440px;
+    height:100vh;
     display: flex;
     align-items: center;
     margin: auto;
+    gap: 64px;
 
     h1{
         font-family: Anta;
@@ -32,4 +34,31 @@
         width: 500px;
         height: 710px;
     }
+}
+
+.above-the-fold-name{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    img{
+        margin-bottom: 16px;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.above-the-fold-myreversions{
+display: flex;
+flex-direction: column;
+width:1440px;
+height:120px;
+align-items: flex-start;
+gap: 16px;
+}
+
+
+.above-the-fold-arrowpicture{
+    width: 38px !important; 
+    height: 89px !important;
 }
