@@ -1,17 +1,41 @@
-.navbar{   
+.navbar-component{
+    position:sticky;
+    top: 0;
+
     background-color: #89BCD9;
     width:1440px;
     height: 104px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
+}
+
+.navbar{   
+   width: 677px;
+   height: 26px;
+   display:flex;
+   gap: 32px;
 
     a{
-        gap: 32px;
         color: black;
-        width: 100px;
         height: 31px;
-        display: inline-block;
+        text-decoration: none;
+
+        font-family: 'Josefin Sans';
+        font-size: 26px;
+    }
 }
+
+.navbar-component-switchlanguage{
+    display: flex;
+    gap: 16px;
+
+    button{
+        background-color: #89BCD9;
+        border:none;
+
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+    }
 }
