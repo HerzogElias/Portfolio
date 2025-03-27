@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 1440px;
-   height: 408px;
+ 
     justify-content: center;
     flex-direction: column;
     margin: auto;
@@ -20,6 +20,7 @@
 
 .my-skills-content {
     display: flex;
+    justify-content: center;
     width: 100%;
     gap: 40px;
 }
@@ -45,7 +46,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    flex-direction: column;
+    width: 375px;
     height: 400px;
 
+}
+
+.my-skills-learningprogramming-detail{
+    width: 80%;
+
+    color: #FFFDFD;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    text-align: center;
+}
+
+.my-skills-learningprogramming-icons{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
 }
