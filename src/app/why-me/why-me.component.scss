@@ -67,10 +67,14 @@
         align-items: center;
         justify-content: center;
 
-
         font-family: 'Josefin Sans';
         font-weight: 400;
         font-size: 18px;
+    
+    }
+
+    a{
+        text-decoration: none;
     }
 }
 
@@ -80,4 +84,5 @@
     justify-content: flex-end;
     width: 100%;
     padding-top: 35px;
+
 }

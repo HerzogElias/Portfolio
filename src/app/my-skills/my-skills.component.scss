@@ -1,6 +1,9 @@
 .my-skills-component {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 1440px;
+   height: 408px;
     justify-content: center;
     flex-direction: column;
     margin: auto;
@@ -22,13 +25,13 @@
 }
 
 .my-skills-icons {
-    width: 50%;
-    display: flex;
-    align-items: center;
+    width: 408px;
+    display: flex; 
     justify-content: center;
-    gap: 45px;
+    align-items: center;
+    gap: 40px;
     flex-wrap: wrap;
-    row-gap: 20px;
+    
     img {
         width: 50px;
         height: auto;
