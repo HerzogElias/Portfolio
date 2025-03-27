@@ -1,7 +1,7 @@
 .why-me-component {
     display: flex;
     width: 1440px;
-    height: 370px;
+    height: 550px;
     justify-content: center;
     flex-direction: column;
     margin: auto;
@@ -23,7 +23,7 @@
 
 .why-me-located {
     width: 50%;
-    height: 150px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,19 +37,47 @@
         font-size: 30px;
         font-weight: 700;
         color: #F8F5EC;
-
+        font-family: 'Josefin Sans';
     }
 }
 
 .why-me-text {
     width: 50%;
-    height: 150px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     span{
       color:#F8F5EC;
+      font-family: 'Josefin Sans';
+      font-weight: 400;
       font-size: 18px;
     }
+
+    button{
+        width: 134px;
+        height: 48px;
+        background-color: transparent;
+        color: #89BCD9;
+        border: 1px solid #89BCD9;
+        border-radius: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+.why-me-contact{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 35px;
 }
