@@ -16,25 +16,52 @@
     }
 }
 
-
-
 .my-projects-content {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-
-
 .my-projects-projects{
-    background-color: #2D383F;
     display: flex;
     align-items: center;
-    justify-content: center;
     color: white;
+    width: 1440px;
 }
 
-.my-projects-projects-descriptio{
+.my-projects-navbar{
     display: flex;
+    width: 300px;
+    align-items: center;
+
+
+    p{
+        color: #89BCD9;
+        font-family: 'Josefin Sans';
+        font-weight: 500;
+        font-size: 30px;    
+        padding-left: 15px;
+    }
+
+
+    &.active {
+        background-color: #2D383F;
+    
+        p {
+          color: white;
+        }
+    }
 }
+
+.my-projects-projects-description{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:16px
+}
+
+.my-projects-projects-activeproject{
+    background-color: #2D383F;
+}
+
 

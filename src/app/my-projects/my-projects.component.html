@@ -4,14 +4,17 @@
         <div class="my-projects-projects">
             <div class="my-projects-projects-description">
                 @for (item of projectnavbar; track $index) {
-                <div>
-                    <p (click)="changeIndex($index)">{{item}}</p>
+                    <div 
+                    class="my-projects-navbar" 
+                    [ngClass]="{'active': activeProject.projectname === item}"
+                  >
+                  <p (click)="changeIndex($index)">{{ $index + 1 }}. {{ item }}</p>
                 </div>
                 }
             </div>
         </div>
-        <div>
+        <div class="my-projects-projects-activeproject">
             <app-single-project [project]="activeProject"></app-single-project>
         </div>
     </div>
-</div>
+</div> 
