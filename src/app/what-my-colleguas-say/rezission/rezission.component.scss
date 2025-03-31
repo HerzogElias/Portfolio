@@ -12,13 +12,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
-    gap: 16px;
     padding-top: 8px;
     color: #F8F5EC;
 
-    span{
-       width: 350px;
-
+    span {
+        width: 350px;
     }
+
+}
+
+h4{
+    margin-bottom: 0;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 26px;
+    color: #F8F5EC;
+}
+
+
+.rezessionen-text{
+    height: 140px;
+}
+
+.projekt-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.projekt-label {
+    color: #F8F5EC;
+    font-family: 'Josefin Sans';
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+.projekt-name {
+    color: #89BCD9;
+    font-size: 'Josefin Sans';
+    font-weight: 400;
+    font-weight: 18px;
 }
