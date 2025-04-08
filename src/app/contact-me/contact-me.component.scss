@@ -1,0 +1,32 @@
+.contact-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1440px;
+    gap: 24px;
+    flex: 1;
+}
+
+
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+
+    p{
+        color: #F8F5EC;
+        font-size: 18px;
+        font-family: 'Joesfin Sans';
+    }
+}
+
+
+.contact-text{
+    width: 40%;
+}
+
+.contact-possibilities{
+    width: 30%;
+}
