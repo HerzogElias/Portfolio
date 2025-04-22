@@ -1,0 +1,71 @@
+{
+    "navbar": {
+      "whyMe": "Why me?",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact",
+      "language": {
+        "de": "DE",
+        "en": "EN"
+      }
+    },
+    "aboveTheFold": {
+      "name": "Elias Herzog",
+      "role": "Frontend Developer"
+    },
+    "whyMe": {
+      "header": "Why me?",
+      "text": "I am motivated to constantly expand my skills and continuously work with new technologies. It is fascinating how fast the world changes, and I want to keep up with this dynamic. Every new skill I learn not only moves me forward professionally but also helps me grow personally. I look forward to taking on new challenges and learning from every step. There is so much to discover, and I am determined to apply my expertise where it makes the biggest impact.",
+      "location": "Living in Marienheide",
+      "contactButton": "Let's talk"
+    },
+    "mySkills": {
+      "header": "My Skills",
+      "learningProgramming": {
+        "title": "I am constantly developing myself:",
+        "goal": "My goal is to continuously improve my skills and develop further in the latest technologies"
+      }
+    },
+    "myProjects": {
+      "header": "My Projects",
+      "join": {
+        "aboutTheProject": "Join helps you manage your tasks with a Scrum board and manage your contacts.",
+        "organisation": "Through group work with 3 people, tasks were managed using a Scrum board, and regular appointments were maintained.",
+        "whatILearned": "Through this project, I got my first experience with Firebase and learned how to manage a project using the Scrum method."
+      },
+      "sharky": {
+        "aboutTheProject": "With the help of object-oriented JavaScript, a 2D game was developed. Help Sharky collect poison to defeat the final boss.",
+        "organisation": "Still in progress. We have agreed on improvements to the code.",
+        "whatILearned": "First deep experience with object-oriented JavaScript programming and Canvas."
+      }
+    },
+    "whatMyColleguasSay": {
+      "header": "Need a team player? Here's what my colleagues say about me",
+      "teamPlayer": {
+        "vitalij": {
+          "name": "Vitalij Schwab",
+          "project": "Sharky",
+          "feedback": "I was always able to work excellently with Elias. His structured and solution-oriented way of working makes every project efficient and enjoyable. Particularly, debugging and solving problems together was always fun – he brings not only expertise but also a positive attitude. I'm looking forward to more collaborations!",
+          "linkedin": "https://www.linkedin.com/in/vitalij-schwab/"
+        },
+        "florian": {
+          "name": "Florian Zunke",
+          "project": "Join",
+          "feedback": "Elias wrote complex and clean code during our project work, which helped drive the project forward. His friendly and nice demeanor made the collaboration very enjoyable.",
+          "linkedin": "https://www.linkedin.com/in/florian-zunke-b18420328/"
+        },
+        "kai": {
+          "name": "Kai Schulz",
+          "project": "Sharky",
+          "feedback": "I was in regular contact with Elias regarding his Sharky project. The discussions were always informative and mutually beneficial. We were able to point out potential improvements in the code to each other, and I am very satisfied with the collaboration.",
+          "linkedin": "https://www.linkedin.com/in/kai-schulz-53207b1a6/"
+        }
+      }
+    },
+    "contact": {
+      "header": "Contact me",
+      "text": "Feel free to reach out to get in touch with me. I would be happy to discuss further details. I am open to positions in the frontend field.",
+      "email": "Contact: contact@elias-herzog.de"
+    }
+  }
+  
