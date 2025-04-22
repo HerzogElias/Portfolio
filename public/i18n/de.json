@@ -3,22 +3,21 @@
       "whyMe": "Warum ich?",
       "skills": "Fähigkeiten",
       "projects": "Projekte",
-      "contact": "Kontakt",
-      "language": {
-        "de": "DE",
-        "en": "EN"
-      }
+      "contact": "Kontakt"
     },
+
     "aboveTheFold": {
       "name": "Elias Herzog",
       "role": "Frontend Entwickler"
     },
+
     "whyMe": {
         "header": "Warum ich?",
         "text": "Ich bin motiviert, meine Skills stetig zu erweitern und mich kontinuierlich in neue Technologien einzuarbeiten. Es ist faszinierend, wie schnell sich die Welt verändert, und ich will mit dieser Dynamik Schritt halten. Jede neue Fähigkeit, die ich erlerne, bringt mich nicht nur beruflich weiter, sondern lässt mich auch persönlich wachsen. Ich freue mich darauf, immer wieder neue Herausforderungen anzunehmen und aus jedem Schritt zu lernen. Es gibt so viel, das ich entdecken kann, und ich bin entschlossen, meine Expertise genau dort einzubringen, wo sie den größten Unterschied macht.",
         "location": "Wohnhaft in Marienheide",
         "contactButton": "Lass uns reden"
       },
+    
     "mySkills": {
       "header": "Meine Fähigkeiten",
       "learningProgramming": {
@@ -26,6 +25,7 @@
         "goal": "Mein Ziel ist es, meine Fähigkeiten kontinuierlich zu verbessern und mich in den neuesten Technologien weiterzuentwickeln"
       }
     },
+    
     "myProjects": {
       "header": "Meine Projekte",
       "join": {
