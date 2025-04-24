@@ -7,3 +7,9 @@
     align-items: center;
     margin: auto;
 }
+
+@media screen and (max-width: 1470px) {
+    .footer-component {
+        width: 1200px;
+    } 
+}

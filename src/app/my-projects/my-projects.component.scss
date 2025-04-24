@@ -64,4 +64,8 @@
     background-color: #2D383F;
 }
 
-
+@media screen and (max-width: 1470px) {
+    .my-projects-component {
+        width: 1200px;
+    } 
+}

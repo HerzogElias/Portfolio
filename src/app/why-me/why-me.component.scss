@@ -85,3 +85,10 @@
     padding-top: 35px;
 
 }
+
+@media screen and (max-width: 1470px) {
+    .why-me-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}

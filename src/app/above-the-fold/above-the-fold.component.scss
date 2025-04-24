@@ -1,19 +1,19 @@
 .above-the-fold-container {
     width: 1440px;
-    height:100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     margin: auto;
     gap: 64px;
 
-    h1{
+    h1 {
         font-family: Anta;
         font-size: 88px;
         color: #F8F5EC;
         text-align: center;
     }
-   
-    h2{
+
+    h2 {
         font-family: Anta;
         font-size: 40px;
         color: #F8F5EC;
@@ -21,7 +21,7 @@
     }
 }
 
-.above-the-fold-portrait{
+.above-the-fold-portrait {
     background-image: url('/img/abovethefold/Property 1=Default.png');
     background-repeat: no-repeat;
     width: 600px;
@@ -30,34 +30,52 @@
     position: relative;
     border-radius: 50%;
 
-    img{
+    img {
         width: 500px;
         height: 710px;
     }
 }
 
-.above-the-fold-name{
+.above-the-fold-name {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     flex-direction: column;
-    img{
+
+    img {
         margin-bottom: 16px;
         width: 130px;
         height: 130px;
     }
 }
 
-.above-the-fold-myreversions{
-display: flex;
-height: 80%;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
+.above-the-fold-myreversions {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 
-.above-the-fold-arrowpicture{
-    width: 38px !important; 
+.above-the-fold-arrowpicture {
+    width: 38px !important;
     height: 89px !important;
+}
+
+
+@media screen and (max-width: 1470px) {
+    .above-the-fold-container {
+        width: 1200px;
+        gap: 32px;
+
+        h1 {
+            font-size: 66px;
+
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
 }
