@@ -25,9 +25,11 @@
         "goal": "Mein Ziel ist es, meine Fähigkeiten kontinuierlich zu verbessern und mich in den neuesten Technologien weiterzuentwickeln"
       }
     },
-    
     "myProjects": {
       "header": "Meine Projekte",
+      "aboutTheProject":"Über das Projekt:",
+      "organisation":"Organisation des Projektes:",
+      "whatILearned":"Lernziel aus dem Projekt",
       "join": {
         "aboutTheProject": "Join hilft dir als richtiges Aufgabentool, deine Aufgaben mit einem Scrum-Board zu pflegen, sowie deine Kontakte zu verwalten.",
         "organisation": "Durch eine Gruppenarbeit mit 3 Personen wurden die Aufgaben mit der Hilfe eines Scrum-Boards gemanaged und regelmäßige Termine gepflegt.",
@@ -41,6 +43,7 @@
     },
     "whatMyColleguasSay": {
       "header": "Teamplayer benötigt? Das sagen meine Kollegen über mich",
+      "projecttitle":"Projekt",
       "teamPlayer": {
         "vitalij": {
           "name": "Vitalij Schwab",
@@ -61,11 +64,9 @@
           "linkedin": "https://www.linkedin.com/in/kai-schulz-53207b1a6/"
         }
       }
-    },
-    "contact": {
-      "header": "Kontaktieren Sie mich",
-      "text": "Melden Sie sich gerne um mit mir in Kontakt zu treten. Gerne besprechen wir weitere Details. Ich bin offen für Stellen im Frontend-Bereich.",
-      "email": "Kontakt: contact@elias-herzog.de"
-    }
+    },  
+      "contact": {
+        "text": "Kontaktieren Sie mich: Melden Sie sich gerne um mit mir in Kontakt zu treten. Gerne besprechen wir weitere Details. Ich bin offen für Stellen im Frontend-Bereich. Kontakt: contact@elias-herzog.de"
+      }
   }
   

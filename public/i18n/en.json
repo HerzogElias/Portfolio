@@ -27,7 +27,10 @@
       }
     },
     "myProjects": {
-      "header": "My Projects",
+      "header": "My Projects:",
+      "aboutTheProject":"About the Project:",
+      "organisation":"Organisation of the Project:",
+      "whatILearned":"What I learned:",
       "join": {
         "aboutTheProject": "Join helps you manage your tasks with a Scrum board and manage your contacts.",
         "organisation": "Through group work with 3 people, tasks were managed using a Scrum board, and regular appointments were maintained.",
@@ -41,6 +44,7 @@
     },
     "whatMyColleguasSay": {
       "header": "Need a team player? Here's what my colleagues say about me",
+      "projecttitle":"Project",
       "teamPlayer": {
         "vitalij": {
           "name": "Vitalij Schwab",
@@ -62,10 +66,8 @@
         }
       }
     },
-    "contact": {
-      "header": "Contact me",
-      "text": "Feel free to reach out to get in touch with me. I would be happy to discuss further details. I am open to positions in the frontend field.",
-      "email": "Contact: contact@elias-herzog.de"
-    }
+    
+      "contact": {
+        "text": "Contact me: Feel free to reach out to get in touch with me. I would be happy to discuss further details. I am open to positions in the frontend field. Contact: contact@elias-herzog.de"
+      }
   }
-  

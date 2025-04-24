@@ -1,13 +1,13 @@
 <div class="rezessionen-section">
     @for (item of rezessionen; track item.name) {
     <div class="rezessionen-content">
-        <h4 class="name">{{item.name}} </h4>
+        <h4 class="name">{{item.name |translate}} </h4>
         <div class="projekt-container">
-            <p class="projekt-label">Projekt:</p>
-            <p class="projekt-name">{{item.projekt}}</p>
+            <p class="projekt-label">{{whatMyColleguasSay.projecttitle |translate}}</p>
+            <p class="projekt-name">{{item.projekt |translate}}</p>
         </div>
         <div class="rezessionen-text">
-            <span class>{{item.rezession}}</span>
+            <span class>{{item.rezession |translate}}</span>
         </div>
         <a href="{{item.linkedin}}"> Link to Linkedin</a>
     </div>
