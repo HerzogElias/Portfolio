@@ -19,6 +19,7 @@ export class ContactformComponent {
   }
   
   mailTest = false;
+  privacyAccepted = false;
 
   post = {
     endPoint: 'https://elias-herzog.de/sendMail.php',
@@ -33,7 +34,7 @@ export class ContactformComponent {
 
   onSubmit(ngForm: NgForm) {
     console.log(this.contactData)
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest &&!this.privacyAccepted) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -45,7 +46,7 @@ export class ContactformComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest &&this.privacyAccepted) {
 
       ngForm.resetForm();
     }

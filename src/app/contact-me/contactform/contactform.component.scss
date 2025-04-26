@@ -42,3 +42,45 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #2d3748 inset !important;
   -webkit-text-fill-color: #89BCD9;
 }
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  margin-left: 12px;
+  color: #89BCD9;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Joesfin Sans';
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px; // oder 32px, je nachdem wie viel Luft du willst
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #89BCD9;
+  border-radius: 9px;
+  background-color: #89BCD9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:checked {
+    background-color: #2d3748;
+    border-color:#89BCD9;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M6.173 14.727L0 8.553l2.066-2.066 4.107 4.107L13.934 2.933 16 5l-9.827 9.727z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+    border-color: #555;
+  }
+}

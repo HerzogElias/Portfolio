@@ -38,22 +38,20 @@
         font-family: 'Josefin Sans';
         font-size: 16px;
     }
+}
 
- 
+.navbar-responsive{
+    display: none;
 }
 
 @media screen and (max-width: 1470px) {
     .navbar-component{
         width: 1200px;
     }
-    
-    
     .navbar-component-logo{
         display: none;
     }
-
     .navbar{
         width:auto
     }
 }
-
