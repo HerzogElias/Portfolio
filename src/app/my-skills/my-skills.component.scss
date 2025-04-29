@@ -1,12 +1,14 @@
-.my-skills-component {
+:host{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.my-skills-component {
     width: 1440px;
  
     justify-content: center;
     flex-direction: column;
-    margin: auto;
 
     h3 {
         font-family: Anta;
@@ -65,4 +67,10 @@
     display: flex;
     gap: 16px;
     justify-content: center;
+}
+
+@media screen and (max-width: 1470px) {
+  .my-skills-component{
+    width: 1200px;
+  }
 }

@@ -1,4 +1,4 @@
-.rezessionen-section {
+.rezessionen-component {
     display: flex;
     justify-content: center;
 }
@@ -34,6 +34,7 @@ h4{
 a{
     position: absolute;
     bottom: 100px;
+    color: #89BCD9;
 }
 
 .rezessionen-text{
@@ -58,4 +59,10 @@ a{
     font-size: 'Josefin Sans';
     font-weight: 400;
     font-weight: 18px;
+}
+
+@media screen and (max-width: 1470px) {
+    .rezessionen-component{
+        overflow-y: auto;
+    }
 }

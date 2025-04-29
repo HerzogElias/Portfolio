@@ -1,10 +1,11 @@
-.my-projects-component {
+:host{
     display: flex;
-    width: 1440px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: auto;
+}
+
+.my-projects-component {
+    width: 1440px;
 
     h3 {
         font-family: Anta;
@@ -68,4 +69,8 @@
     .my-projects-component {
         width: 1200px;
     } 
+
+    .my-projects-projects{
+        width: 1200px;
+    }
 }

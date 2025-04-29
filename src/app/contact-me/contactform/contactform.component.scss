@@ -84,3 +84,13 @@ label {
     border-color: #555;
   }
 }
+
+@media screen and (max-width: 1470px) {
+.contactForm-textinputs{
+  flex-direction: column;
+}
+
+textarea{
+  width: 445px;
+}
+}

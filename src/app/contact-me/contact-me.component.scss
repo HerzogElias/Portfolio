@@ -1,21 +1,23 @@
-.contact-component{
+:host {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+.contact-component {
     width: 1440px;
     gap: 24px;
-    margin: auto;
 }
 
 
-.contact-content{
+.contact-content {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 1440px;
 
-    p{
+    p {
         color: #F8F5EC;
         font-size: 18px;
         font-family: 'Joesfin Sans';
@@ -23,10 +25,21 @@
 }
 
 
-.contact-text{
+.contact-text {
     width: 40%;
 }
 
-.contact-possibilities{
+.contact-possibilities {
     width: 30%;
+
+    a {
+        color: #F8F5EC;
+    }
+}
+
+
+@media screen and (max-width: 1470px) {
+    .contact-component {
+        width: 1200px;
+    }
 }

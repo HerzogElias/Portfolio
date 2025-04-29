@@ -1,9 +1,9 @@
-<div class="rezessionen-section">
+<div class="rezessionen-component">
     @for (item of rezessionen; track item.name) {
     <div class="rezessionen-content">
         <h4 class="name">{{item.name |translate}} </h4>
         <div class="projekt-container">
-            <p class="projekt-label">{{'whatMyColleguasSay.projecttitle' |translate}}</p>
+            <p class="projekt-label">{{'whatMyColleguasSay.projecttitle'|translate}}</p>
             <p class="projekt-name">{{item.projekt |translate}}</p>
         </div>
         <div class="rezessionen-text">
