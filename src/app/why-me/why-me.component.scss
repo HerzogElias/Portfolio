@@ -87,6 +87,9 @@
 }
 
 @media screen and (max-width: 1470px) {
+    .why-me-component {
+        width: 1200px;
+    }
     .why-me-content{
         flex-direction: column;
         align-items: center;
