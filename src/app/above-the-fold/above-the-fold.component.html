@@ -1,5 +1,10 @@
 <div class="above-the-fold-container">
 
+    <div *ngIf="isMenuVisible" class="menu-dropdown">
+        <app-navbar-responsive></app-navbar-responsive>
+    </div>  
+ 
+
     <div class="above-the-fold-resp-menue">
         <img 
         class="burger-menue" 
@@ -29,11 +34,8 @@
             <img src="/img/abovethefold/likedin.png" alt="linkedin button">
         </a>
     </div>
-    <div *ngIf="isMenuVisible" class="menu-dropdown">
-        <app-navbar-responsive></app-navbar-responsive>
-       </div>
+  
     </div>
 
-    
- 
+
 <app-navbar></app-navbar>
