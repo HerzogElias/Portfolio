@@ -95,3 +95,9 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 1230px) {
+   .why-me-component{
+    width: 800px;
+   }
+}

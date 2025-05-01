@@ -64,3 +64,10 @@
     display: flex;
     gap: 32px;
 }
+
+@media screen and (max-width: 1230px) {
+   .single-project-details-pictureProject{
+    width: 386px;
+    height: 267px;
+   }
+ }

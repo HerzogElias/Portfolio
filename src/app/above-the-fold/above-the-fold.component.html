@@ -1,10 +1,8 @@
-<div class="above-the-fold-container">
+<div *ngIf="isMenuVisible" class="menu-dropdown">
+    <app-navbar-responsive></app-navbar-responsive>
+</div>  
 
-    <div *ngIf="isMenuVisible" class="menu-dropdown">
-        <app-navbar-responsive></app-navbar-responsive>
-    </div>  
- 
-
+<div class="above-the-fold-container"> 
     <div class="above-the-fold-resp-menue">
         <img 
         class="burger-menue" 
@@ -12,7 +10,6 @@
         alt="Burger-Menü"
         (click)="toggleMenu()">
     </div>
-
 
     <div class="above-the-fold-portrait">
         <img src="/img/abovethefold/portrait.png" alt="Portrait">
@@ -37,5 +34,6 @@
   
     </div>
 
+  
 
 <app-navbar></app-navbar>

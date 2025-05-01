@@ -55,3 +55,9 @@
         width:auto
     }
 }
+
+@media screen and (max-width: 1230px) {
+    .navbar-component{
+        display: none;
+    }
+}
