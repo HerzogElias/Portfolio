@@ -1,7 +1,3 @@
-<div *ngIf="isMenuVisible" class="menu-dropdown">
-    <app-navbar-responsive></app-navbar-responsive>
-</div>  
-
 <div class="above-the-fold-container"> 
     <div class="above-the-fold-resp-menue">
         <img 
@@ -13,7 +9,11 @@
 
     <div class="above-the-fold-portrait">
         <img src="/img/abovethefold/portrait.png" alt="Portrait">
+        <div *ngIf="isMenuVisible" class="menu-dropdown">
+            <app-navbar-responsive></app-navbar-responsive>
+        </div> 
     </div>
+
     <div class="above-the-fold-name">
         <img src="/img/abovethefold/logo.png">
         <h1>{{ 'aboveTheFold.name' | translate }}</h1>
@@ -31,8 +31,9 @@
             <img src="/img/abovethefold/likedin.png" alt="linkedin button">
         </a>
     </div>
+
   
-    </div>
+</div>
 
   
 

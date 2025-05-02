@@ -122,15 +122,18 @@
     }
 
     .menu-dropdown {
-        position: absolute !important;
-        width: 650px; 
-        height: 630px;
+        width: 100%;
+        height: auto;
         z-index: 9999;
         display: flex;
         align-items: center;
         justify-content: space-around;
         overflow: hidden;
-        top: 400;
-      }
-      
+        position: absolute;
+        top: 0;
+        width: 600px;
+        height: 619px;
+
+    }
+
 }

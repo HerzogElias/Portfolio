@@ -1,6 +1,8 @@
 .rezessionen-component {
     display: flex;
     justify-content: center;
+    overflow-x: scroll;
+    width: 350px;
 }
 
 .rezessionen-content {
@@ -61,8 +63,3 @@ a{
     font-weight: 18px;
 }
 
-@media screen and (max-width: 1470px) {
-    .rezessionen-component{
-        overflow-x: auto;
-    }
-}
