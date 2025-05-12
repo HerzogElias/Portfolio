@@ -1,4 +1,4 @@
-:host{
+:host {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,60 +23,94 @@
     width: 100%;
 }
 
-.my-projects-projects{
+.my-projects-projects {
     display: flex;
     align-items: center;
     color: white;
     width: 1440px;
 }
 
-.my-projects-navbar{
+.my-projects-navbar {
     display: flex;
     width: 300px;
     align-items: center;
 
 
-    p{
+    p {
         color: #89BCD9;
         font-family: 'Josefin Sans';
         font-weight: 500;
-        font-size: 30px;    
+        font-size: 30px;
         padding-left: 15px;
     }
 
 
     &.active {
         background-color: #2D383F;
-    
+
         p {
-          color: white;
+            color: white;
         }
     }
 }
 
-.my-projects-projects-description{
+.my-projects-projects-description {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap:16px
+    gap: 16px
 }
 
-.my-projects-projects-activeproject{
+.my-projects-projects-activeproject {
     background-color: #2D383F;
 }
 
 @media screen and (max-width: 1470px) {
     .my-projects-component {
         width: 1200px;
-    } 
+    }
 
-    .my-projects-projects{
+    .my-projects-projects {
         width: 1200px;
     }
 }
 
 @media screen and (max-width: 1230px) {
-    .my-projects-component{
-     width: 800px;
+    .my-projects-component {
+        width: 800px;
     }
- }
+
+    .my-projects-projects {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .my-projects-component {
+        width: 610px;
+    }
+
+    .my-projects-projects {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    :host {
+        justify-content: flex-start;
+    }
+
+    .my-projects-component {
+        width: 450px !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .my-projects-projects {
+        width: 450px;
+    }
+
+    .my-projects-navbar {
+        width: 150px;
+    }
+}

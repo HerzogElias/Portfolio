@@ -17,7 +17,7 @@
 
 .why-me-content {
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 
 .why-me-located {
@@ -28,8 +28,8 @@
     justify-content: center;
 
     img {
-        width: 74, 43px;
-        height: 63, 28px;
+        width: 74px;
+        height: 63px;
     }
 
     span {
@@ -48,14 +48,14 @@
     align-items: center;
     flex-direction: column;
 
-    span{
-      color:#F8F5EC;
-      font-family: 'Josefin Sans';
-      font-weight: 400;
-      font-size: 18px;
+    span {
+        color: #F8F5EC;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 18px;
     }
 
-    button{
+    button {
         width: 134px;
         height: 48px;
         background-color: transparent;
@@ -69,15 +69,15 @@
         font-family: 'Josefin Sans';
         font-weight: 400;
         font-size: 18px;
-    
+
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 }
 
-.why-me-contact{
+.why-me-contact {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -90,14 +90,65 @@
     .why-me-component {
         width: 1200px;
     }
-    .why-me-content{
+
+    .why-me-content {
         flex-direction: column;
         align-items: center;
     }
 }
 
 @media screen and (max-width: 1230px) {
-   .why-me-component{
-    width: 800px;
-   }
+    .why-me-component {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .why-me-component {
+        width: 610px;
+    }
+
+    .why-me-content {
+        width: 610px !important;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    :host{
+        width: 430px !important;
+    }
+    .why-me-component {
+        width: 430px;
+        justify-content: flex-start;
+        margin:0;
+        text-align: start;
+
+        h3 {
+            width: 90%;
+        }
+    }
+
+    
+    .why-me-content {
+        justify-content: flex-start;
+        width: 430px !important;
+    }
+
+    .why-me-text {
+        width: 430px;
+        height: auto;
+    }
+
+    .why-me-located {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        width: 90%;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .why-me-title {
+        width: 90%;
+    }
 }

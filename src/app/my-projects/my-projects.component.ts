@@ -15,6 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class MyProjectsComponent {
   projects: Projekt[] = [{
     projectname: 'Join',
+    technologies: 'HTML, CSS, Javascript',
     content: {
       aboutTheProject: 'myProjects.join.aboutTheProject',
       organisation: 'myProjects.join.organisation',
@@ -27,6 +28,7 @@ export class MyProjectsComponent {
   },
   {
     projectname: 'Sharky',
+    technologies: 'HTML, Canvas, Objektorientiertes Javascript',
     content: {
       aboutTheProject: 'myProjects.sharky.aboutTheProject',
       organisation: 'myProjects.sharky.organisation',

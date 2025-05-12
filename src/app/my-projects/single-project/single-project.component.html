@@ -6,6 +6,7 @@
                 <img src="/img/myprojects/Ellipse 8.png" alt="my-projects-anfürhrungszeichen">
                 <h4>{{'myProjects.aboutTheProject' |translate}} </h4>
             </div>
+
             <div class="single-project-description-detail-content">
                 <span>{{project.content.aboutTheProject | translate}}</span>
             </div>
@@ -31,16 +32,34 @@
                 <span>{{project.content.whatILearned | translate}}</span>
             </div>
         </div>
+
+        <div class="single-project-details-testingButtons-respo">
+
+            <a href="{{project.livetest}}" target="_blank">
+                <img src="/img/myprojects/Button Primary Web.png">
+            </a>
+
+            <a href="{{project.github}}" target="_blank">
+                <img src="/img/myprojects/Button Secondary Web.png">
+            </a>
+
+        </div>
+
     </div>
 
         <div class="single-project-details">
+            <div class="single-project-description-title-respo">
+                <span>{{project.projectname}}</span>
+               <p>{{'myProjects.technologies' |translate}}: {{project.technologies}}</p>
+            </div>
+            <div class="single-project-deteils-technologies">
             <p>{{'myProjects.technologies' |translate}}</p>
             <div class="single-project-details-programmlanguage">
                 @for (item of project.images; track $index) {
                 <img src="{{item}}" alt="Images Project Programmiersprachen">
                 }
             </div>
-
+        </div>
 
             <img class="single-project-details-pictureProject" src="{{project.imageProject}}"
                 alt="Images Project Example">
@@ -57,6 +76,5 @@
                 </a>
 
             </div>
-
         </div>
     </div>

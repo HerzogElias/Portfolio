@@ -1,18 +1,45 @@
-.what-my-colleguas-say-component{
+.what-my-colleguas-say-component {
     display: flex;
     flex-direction: column;
-    padding-top: 64px ;
+    padding-top: 64px;
 }
 
 
-.what-my-colleguas-say-title{
+.what-my-colleguas-say-title {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    h3{
+    h3 {
         color: #89BCD9;
         font-size: 32px;
         font-family: 'Josefin Sans';
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .what-my-colleguas-say-title {
+        display: none;
+    }
+
+    .what-my-colleguas-say-title-respo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h3 {
+            color: #89BCD9;
+            font-size: 32px;
+            font-family: 'Josefin Sans';
+            margin-bottom: 0;
+        }
+
+        h4{
+            font-size: 'Josefin Sans';
+            font-size: 24px;
+            color: #F8F5EC;
+            margin-bottom: 24px;
+        }
     }
 }

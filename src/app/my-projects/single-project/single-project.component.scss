@@ -1,10 +1,8 @@
-.single-project-content{
+.single-project-content {
     display: flex;
 }
 
-
-
-.single-project-description-detail{
+.single-project-description-detail {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -13,61 +11,122 @@
         font-size: 28px;
         color: #F8F5EC;
     }
-    img{
+
+    img {
         width: 26px;
         height: 26px;
     }
 
-   
+
 }
-.single-project-description-detail-title{
+
+.single-project-description-detail-title {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.single-project-description-detail-content{
+.single-project-description-detail-content {
     padding-left: 42px;
     width: 90%;
 
-    span{
+    span {
         color: #F8F5EC;
     }
 
 }
 
-.single-project-details{
+.single-project-details {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-right: 16px;
 
-    p{
+    p {
         color: #F8F5EC;
         padding-bottom: 8px;
     }
 }
 
-.single-project-details-pictureProject{
+.single-project-details-pictureProject {
     width: 455px;
     height: 315px;
     padding-bottom: 32px;
     padding-top: 32px;
 }
 
-.single-project-details-programmlanguage{
+.single-project-details-programmlanguage {
     display: flex;
     gap: 32px;
 }
 
-.single-project-details-testingButtons{
+.single-project-details-testingButtons {
     display: flex;
     gap: 32px;
 }
 
 @media screen and (max-width: 1230px) {
-   .single-project-details-pictureProject{
-    width: 386px;
-    height: 267px;
-   }
- }
+    .single-project-details-pictureProject {
+        width: 386px;
+        height: 267px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .single-project-content {
+        width: 610px;
+        flex-direction: column-reverse;
+    }
+
+    .single-project-details-testingButtons {
+        display: none;
+    }
+
+    .single-project-details-testingButtons-respo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: 610px;
+        height: 52px;
+        margin-top: 16px;
+
+
+        img {
+            width: 120px;
+            height: 42px;
+        }
+    }
+
+    .single-project-deteils-technologies {
+        display: none;
+    }
+
+    .single-project-description-title-respo {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-family: 'Josefin Sans';
+            font-size: 24px;
+            color: #89BCD9;
+        }
+
+        p{
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            color: #F8F5EC;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .single-project-content{
+        width: 430px;
+    }  
+
+    .single-project-details-testingButtons-respo{
+        width: 430px;
+    }
+}

@@ -44,7 +44,10 @@
       }
     },
     "whatMyColleguasSay": {
-      "header": "Need a team player? Here's what my colleagues say about me",
+      "header": {
+        "eins": "Need a Teamplayer?",
+        "zwei": "Here's what my colleagues say about me"
+      },
       "projecttitle":"Project",
       "teamPlayer": {
         "vitalij": {
@@ -69,6 +72,7 @@
     },
     
       "contact": {
+        "header": "Contact me",
         "text": "Contact me: Feel free to reach out to get in touch with me. I would be happy to discuss further details. I am open to positions in the frontend field. Contact: contact@elias-herzog.de"
       }
   }

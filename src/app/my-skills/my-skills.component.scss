@@ -6,7 +6,6 @@
 
 .my-skills-component {
     width: 1440px;
- 
     justify-content: center;
     flex-direction: column;
 
@@ -69,6 +68,10 @@
     justify-content: center;
 }
 
+.my-skills-learningprogramming-respo{
+    display: none !important;
+}
+
 @media screen and (max-width: 1470px) {
   .my-skills-component{
     width: 1200px;
@@ -80,3 +83,66 @@
      width: 800px;
     }
  }
+
+ @media screen and (max-width: 850px) {
+    .my-skills-component{
+     width: 610px;
+     margin-top: 64px;
+    }
+    .my-skills-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-skills-learningprogramming {
+        display: none !important;
+    }
+    .my-skills-learningprogramming-respo {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+
+        h5{
+            color: #89BCD9;
+            font-family: Josefin Sans;
+            font-size: 16px;
+            
+        }
+    }
+
+    .my-skills-learningprogramming-respo-title {
+        text-align: center;
+        color: #FFFDFD;
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+    }
+
+    .my-skills-learningprogramming-respo-content{
+        display: flex;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .my-skills-learningprogramming-respo-programming {
+        background-image: url("/img/myskills/Ellipse%2024.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+   :host{
+    justify-content: flex-start;
+   }
+    .my-skills-component{
+        width: 450px !important;
+    }
+    
+}

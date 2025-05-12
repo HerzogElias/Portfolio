@@ -1,5 +1,6 @@
 export interface Projekt {
     projectname: string;
+    technologies:string;
     content: {
       aboutTheProject: string;
       organisation: string;

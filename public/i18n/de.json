@@ -43,8 +43,11 @@
       }
     },
     "whatMyColleguasSay": {
-      "header": "Teamplayer benötigt? Das sagen meine Kollegen über mich",
-      "projecttitle":"Projekt",
+      "header": {
+        "eins": "Teamplayer benötigt?",
+        "zwei": "Das sagen meine Kollegen über mich"
+      },
+      "projecttitle": "Projekt",
       "teamPlayer": {
         "vitalij": {
           "name": "Vitalij Schwab",
@@ -67,6 +70,7 @@
       }
     },  
       "contact": {
+        "header": "Kontakt",
         "text": "Kontaktieren Sie mich: Melden Sie sich gerne um mit mir in Kontakt zu treten. Gerne besprechen wir weitere Details. Ich bin offen für Stellen im Frontend-Bereich. Kontakt: contact@elias-herzog.de"
       }
   }
