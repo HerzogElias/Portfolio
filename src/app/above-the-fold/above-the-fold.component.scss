@@ -156,5 +156,30 @@
     .above-the-fold-portrait{
         width: 450px;
         height: 470px;
+        background-size: contain;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .above-the-fold-container{
+        align-items: flex-start;
+        width: 310px;
+    }
+
+    .above-the-fold-resp-menue{
+        width: 310px;
+    }
+
+    .above-the-fold-portrait{
+        width: 310px;
+        height: 303px;
+        background-position: center;
+
+        img{
+            width: 270px;
+            height: 285px;
+            object-fit: cover;
+            transform: scale(1.09);
+        };
     }
  }

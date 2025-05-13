@@ -129,7 +129,6 @@
         }
     }
 
-    
     .why-me-content {
         justify-content: flex-start;
         width: 430px !important;
@@ -152,3 +151,38 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    :host{
+        width: 310px !important;
+    }
+    .why-me-component{
+        width: 310px;
+
+        h3{
+            font-size: 45px;
+            font-weight: 300;
+        }
+    }
+    .why-me-content {
+        width: 290px !important;
+        padding-left: 8px;
+        padding-right: 8px; 
+    }
+
+    .why-me-text {
+        width: 290px;
+        padding-left: 8px;
+        padding-right: 8px;
+        height: auto;
+    }
+
+    .why-me-located {
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+
+    .why-me-title {
+        width: 90%;
+    }
+ }

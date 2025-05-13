@@ -16,8 +16,6 @@
         width: 26px;
         height: 26px;
     }
-
-
 }
 
 .single-project-description-detail-title {
@@ -113,7 +111,7 @@
             color: #89BCD9;
         }
 
-        p{
+        p {
             font-family: 'Josefin Sans';
             font-size: 16px;
             color: #F8F5EC;
@@ -122,11 +120,50 @@
 }
 
 @media screen and (max-width: 640px) {
-    .single-project-content{
+    .single-project-content {
         width: 430px;
-    }  
+    }
 
-    .single-project-details-testingButtons-respo{
+    .single-project-details-testingButtons-respo {
         width: 430px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :host {
+        width: 310px !important;
+    }
+
+    .single-project-content {
+        width: 310px;
+    }
+
+    .single-project-description-detail{
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+    .single-project-details-testingButtons-respo {
+        width: 310px;
+    }
+
+    .single-project-details-pictureProject {
+        width: 289px;
+        height: 184px;
+    }
+
+    .single-project-description-detail-title{
+        img{
+           width: 16px;
+           height: 16px; 
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+
+    .single-project-description-detail-content{
+        span{
+           padding-right: 8px; 
+        }
     }
 }

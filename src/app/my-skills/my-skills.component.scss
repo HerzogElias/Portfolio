@@ -139,10 +139,44 @@
 
 @media screen and (max-width: 640px) {
    :host{
+    display: flex;
     justify-content: flex-start;
    }
     .my-skills-component{
+        display: flex;
+        justify-content: flex-start !important;
         width: 450px !important;
+
+        h3{
+            text-align: start;
+        }
+    }
+
+    .my-skills-icons{
+        justify-content: flex-start;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    :host{
+        width: 310px !important;
+    }
+    .my-skills-component{
+        width: 310px !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            font-size: 45px;
+            font-weight: 300;
+        }
+    }
+
+    .my-skills-icons{
+        width: 310px;
+    }
+
+    .my-skills-learningprogramming-respo-content{
+        margin-top: 16px;
+    }
 }
