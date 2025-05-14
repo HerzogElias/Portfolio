@@ -73,3 +73,20 @@ a {
         justify-content: flex-start;
     }
 }
+
+@media screen and (max-width: 500px) {
+  .rezessionen-content{
+    width: 300px;
+    padding-top: 32px;
+    margin-top: 32px;
+
+    span{
+        width: 280px;
+        height: auto;
+    }
+  }
+
+  a {
+    bottom: 70px;
+}
+}
