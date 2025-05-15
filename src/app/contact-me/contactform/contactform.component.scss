@@ -94,3 +94,31 @@ textarea{
   width: 445px;
 }
 }
+
+@media screen and (max-width:500px){
+:host{
+  width: 310px;
+}
+.contact-component{
+  width: 310px;
+}
+
+textarea{
+  width: 310px;
+}
+
+.form-group{
+  width: 310px;
+}
+input{
+  width: 290px;
+}
+
+.contactForm-textinputs {
+  width: 310px;
+}
+
+input[type=text]{
+  width: 290px;
+}
+}

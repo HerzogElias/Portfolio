@@ -63,21 +63,21 @@
         width: 800px;
     }
 
-    .contact-content{
+    .contact-content {
         width: 800px;
     }
 
-    .contact-text{
-        width:100%
+    .contact-text {
+        width: 100%
     }
 }
 
 @media screen and (max-width: 850px) {
-    .contact-component{
-     width: 610px;
+    .contact-component {
+        width: 610px;
     }
 
-    .contact-content{
+    .contact-content {
         width: 610px;
     }
 }
@@ -88,10 +88,27 @@
         margin-left: 16px;
     }
 
-    .contact-component{
-        width: 430px;
-    }  
-    .contact-content{
+    .contact-component {
         width: 430px;
     }
+
+    .contact-content {
+        width: 430px;
+    }
+}
+
+@media screen and (max-width:500px){
+   .contact-component{
+    width: 310px;
+
+    h3{
+        font-size: 45px;
+        font-weight: 300;
+        text-align: start;
+    }
+   }
+
+   .contact-content{
+    width: 310px;
+   }
 }
