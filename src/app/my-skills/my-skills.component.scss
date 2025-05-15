@@ -138,22 +138,9 @@
 }
 
 @media screen and (max-width: 640px) {
-   :host{
-    display: flex;
-    justify-content: flex-start;
-   }
     .my-skills-component{
         display: flex;
-        justify-content: flex-start !important;
         width: 450px !important;
-
-        h3{
-            text-align: start;
-        }
-    }
-
-    .my-skills-icons{
-        justify-content: flex-start;
     }
     
 }

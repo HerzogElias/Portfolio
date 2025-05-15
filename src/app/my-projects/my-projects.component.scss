@@ -96,13 +96,9 @@
 }
 
 @media screen and (max-width: 640px) {
-    :host {
-        justify-content: flex-start;
-    }
 
     .my-projects-component {
         width: 450px !important;
-        justify-content: flex-start;
         align-items: flex-start;
     }
 

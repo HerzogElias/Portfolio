@@ -55,8 +55,7 @@
 @media screen and (max-width: 640px) {
     :host{
         display: flex;
-        align-items: flex-start;
-        width: 430px;
+        justify-content: center;
     }
     .footer-component{
         width: 430px;

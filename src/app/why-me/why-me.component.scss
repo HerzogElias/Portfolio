@@ -115,17 +115,20 @@
 
 
 @media screen and (max-width: 640px) {
-    :host{
+    :host {
         width: 430px !important;
+        display: flex;
+        align-items: center;
     }
+
     .why-me-component {
-        margin:0;
+        margin: 0;
 
         h3 {
             width: 90%;
         }
     }
-    
+
     .why-me-text {
         width: 430px;
         height: auto;
@@ -137,30 +140,26 @@
         width: 90%;
         height: auto;
     }
-
-    .why-me-title {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 500px) {
-    :host{
+    :host {
         width: 310px !important;
-        margin-left:auto;
-        align-items: center;
-        justify-content: center;
+        margin-left: auto;
     }
-    .why-me-component{
+
+    .why-me-component {
         width: 310px;
 
-        h3{
+        h3 {
             font-size: 40px;
             font-weight: 300;
+            text-align: center;
         }
     }
+
     .why-me-content {
-        padding-left: 8px;
-        padding-right: 8px; 
+        width: 310px;
     }
 
     .why-me-text {
@@ -173,4 +172,9 @@
         margin-top: 12px;
         margin-bottom: 24px;
     }
- }
+
+    .why-me-title {
+        text-align: center;
+        width: 90%;
+    }
+}
