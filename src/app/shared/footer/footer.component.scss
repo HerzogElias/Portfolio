@@ -65,3 +65,15 @@
         padding-top: 16px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    :host{
+        width: 310px;
+    }
+    .footer-component{
+        width: 310px;
+        flex-direction: column;
+        height: auto;
+        padding-top: 16px;
+    }
+}

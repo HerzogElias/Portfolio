@@ -98,6 +98,10 @@
 }
 
 @media screen and (max-width:500px){
+    :host{
+        margin-left: 0;
+    }
+    
    .contact-component{
     width: 310px;
 
