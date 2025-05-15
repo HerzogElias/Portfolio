@@ -119,21 +119,13 @@
         width: 430px !important;
     }
     .why-me-component {
-        width: 430px;
-        justify-content: flex-start;
         margin:0;
-        text-align: start;
 
         h3 {
             width: 90%;
         }
     }
-
-    .why-me-content {
-        justify-content: flex-start;
-        width: 430px !important;
-    }
-
+    
     .why-me-text {
         width: 430px;
         height: auto;
@@ -144,7 +136,6 @@
         margin-bottom: 32px;
         width: 90%;
         height: auto;
-        justify-content: flex-start;
     }
 
     .why-me-title {
@@ -155,23 +146,24 @@
 @media screen and (max-width: 500px) {
     :host{
         width: 310px !important;
+        margin-left:auto;
+        align-items: center;
+        justify-content: center;
     }
     .why-me-component{
         width: 310px;
 
         h3{
-            font-size: 45px;
+            font-size: 40px;
             font-weight: 300;
         }
     }
     .why-me-content {
-        width: 290px !important;
         padding-left: 8px;
         padding-right: 8px; 
     }
 
     .why-me-text {
-        width: 290px;
         padding-left: 8px;
         padding-right: 8px;
         height: auto;
@@ -180,9 +172,5 @@
     .why-me-located {
         margin-top: 12px;
         margin-bottom: 24px;
-    }
-
-    .why-me-title {
-        width: 90%;
     }
  }

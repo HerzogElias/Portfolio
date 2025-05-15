@@ -138,21 +138,19 @@
 }
 
 @media screen and (max-width: 850px) {
-    .above-the-fold-resp-menue{
+    :host{
         width: 610px;
+    }
+    .above-the-fold-resp-menue{
+        width: 100%;
     }
  }
 
  @media screen and (max-width: 640px) {
-    .above-the-fold-container{
-        align-items: flex-start;
-        width: 430px;
+    :host{
+        width: 450px;;
     }
-
-    .above-the-fold-resp-menue{
-        width: 430px;
-    }
-
+   
     .above-the-fold-portrait{
         width: 450px;
         height: 470px;
@@ -161,15 +159,9 @@
  }
 
  @media screen and (max-width: 500px) {
-    .above-the-fold-container{
-        align-items: flex-start;
+    :host{
         width: 310px;
     }
-
-    .above-the-fold-resp-menue{
-        width: 310px;
-    }
-
     .above-the-fold-portrait{
         width: 310px;
         height: 303px;
