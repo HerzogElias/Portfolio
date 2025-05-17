@@ -52,11 +52,6 @@ export class MyProjectsComponent implements AfterViewInit{
 
   changeIndex(index: number) {
     this.activeProject = this.projects[index];
-
-    setTimeout(() => {
-      AOS.refresh();
-    }, 0);
-
     this.ngAfterViewInit();
   }
   }
