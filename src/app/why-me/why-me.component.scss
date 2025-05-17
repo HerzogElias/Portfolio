@@ -116,7 +116,6 @@
 
 @media screen and (max-width: 640px) {
     :host {
-        width: 430px !important;
         display: flex;
         align-items: center;
     }
@@ -144,12 +143,12 @@
 
 @media screen and (max-width: 500px) {
     :host {
-        width: 310px !important;
-        margin-left: auto;
+  display: flex;
+  justify-content: center;
     }
 
     .why-me-component {
-        width: 310px;
+        width: 310px !important;
 
         h3 {
             font-size: 40px;
@@ -159,13 +158,14 @@
     }
 
     .why-me-content {
-        width: 310px;
+        width: 310px !important;
     }
 
     .why-me-text {
         padding-left: 8px;
         padding-right: 8px;
         height: auto;
+        width: 310px;
     }
 
     .why-me-located {
@@ -175,6 +175,5 @@
 
     .why-me-title {
         text-align: center;
-        width: 90%;
     }
 }

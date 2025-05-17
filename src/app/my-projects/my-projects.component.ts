@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component,AfterViewInit } from '@angular/core';
 import { SingleProjectComponent } from "./single-project/single-project.component";
 import { CommonModule } from '@angular/common';
 import { Projekt } from '../interfaces/projects.interface';
 import { TranslateModule } from '@ngx-translate/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-my-projects',
@@ -12,7 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 
 
-export class MyProjectsComponent {
+export class MyProjectsComponent implements AfterViewInit{
   projects: Projekt[] = [{
     projectname: 'Join',
     technologies: 'HTML, CSS, Javascript',
@@ -44,9 +45,19 @@ export class MyProjectsComponent {
   activeProject = this.projects[0];
 
   projectnavbar: string[] = ['Join', 'Sharky']
-
+  
+  ngAfterViewInit() {
+    AOS.init();
+  }
 
   changeIndex(index: number) {
     this.activeProject = this.projects[index];
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 0);
+
+    this.ngAfterViewInit();
   }
-}
+  }
+

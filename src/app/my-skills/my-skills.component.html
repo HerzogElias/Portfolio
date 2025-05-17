@@ -1,4 +1,7 @@
-<div class="my-skills-component" id="skills">
+<div class="my-skills-component" id="skills" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
+
   <div class="my-skills-title">
     <h3>{{'mySkills.header'|translate}}</h3>
   </div>
@@ -7,7 +10,7 @@
   <div class="my-skills-content">
     <div class="my-skills-icons">
       @for (item of iconsFrondend; track $index) {
-      <div>
+      <div data-aos="flip-down">
         <img [src]="item" alt="Skill {$index}">
       </div>
       }

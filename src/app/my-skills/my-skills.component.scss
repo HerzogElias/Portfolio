@@ -147,12 +147,11 @@
 
 @media screen and (max-width: 500px) {
     :host{
-        width: 310px !important;
+        display: flex;
+        justify-content: center;
     }
     .my-skills-component{
         width: 310px !important;
-        justify-content: flex-start;
-        align-items: flex-start;
         h3{
             font-size: 45px;
             font-weight: 300;

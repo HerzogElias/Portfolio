@@ -63,6 +63,9 @@
     height: 89px !important;
 }
 
+.above-the-fold-resp-menue {
+    display: none;
+}
 
 @media screen and (max-width: 1470px) {
     .above-the-fold-container {
@@ -78,10 +81,6 @@
             font-size: 30px;
         }
     }
-}
-
-.above-the-fold-resp-menue {
-    display: none;
 }
 
 @media screen and (max-width: 1230px) {
@@ -148,7 +147,7 @@
 
  @media screen and (max-width: 640px) {
     :host{
-        width: 450px;;
+        width: 450px;
     }
    
     .above-the-fold-portrait{
@@ -160,6 +159,12 @@
 
  @media screen and (max-width: 500px) {
     :host{
+      width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .above-the-fold-container{
         width: 310px;
     }
     .above-the-fold-portrait{
