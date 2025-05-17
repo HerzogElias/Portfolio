@@ -11,13 +11,16 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { WhatMyColleguasSayComponent } from './what-my-colleguas-say/what-my-colleguas-say.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 
+import { ImprintComponent } from './imprint/imprint.component';
+
 import * as AOS from 'aos';
+
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FooterComponent, TranslateModule, AboveTheFoldComponent,WhyMeComponent,MySkillsComponent,MyProjectsComponent,WhatMyColleguasSayComponent,ContactMeComponent],
+  imports: [RouterOutlet, FooterComponent, TranslateModule, AboveTheFoldComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, WhatMyColleguasSayComponent, ContactMeComponent, ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
