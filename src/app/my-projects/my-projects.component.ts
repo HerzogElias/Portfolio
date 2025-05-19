@@ -13,7 +13,7 @@ import * as AOS from 'aos';
 })
 
 
-export class MyProjectsComponent implements AfterViewInit{
+export class MyProjectsComponent{
   projects: Projekt[] = [{
     projectname: 'Join',
     technologies: 'HTML, CSS, Javascript',
@@ -46,13 +46,10 @@ export class MyProjectsComponent implements AfterViewInit{
 
   projectnavbar: string[] = ['Join', 'Sharky']
   
-  ngAfterViewInit() {
-    AOS.init();
-  }
+
 
   changeIndex(index: number) {
     this.activeProject = this.projects[index];
-    this.ngAfterViewInit();
   }
   }
 
