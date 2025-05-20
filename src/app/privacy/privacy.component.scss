@@ -1,0 +1,134 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.privacy-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 1440px;
+
+    h1{
+        font-family: Anta;
+        font-size: 70px;
+        font-weight: 400;
+        color: #89BCD9;
+        text-align: center;
+        margin-bottom: 20px;     
+    }
+
+    h2{
+        font-family: Anta;
+        font-size: 65px;
+        font-weight: 400;
+        color: #89BCD9;
+        text-align: center;
+        margin-bottom: 20px;  
+    }
+    h3 {
+        font-family: Anta;
+        font-size: 60px;
+        font-weight: 400;
+        color: #89BCD9;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+
+    p,h4,li{
+        color: #F8F5EC;
+        font-size: 18px;
+        font-family: 'Josefin Sans';
+    }
+
+    a{
+        color: #F8F5EC;   
+     }
+}
+
+button{
+    margin-top: 32px;
+    width: 156px;
+    height: 52px;
+    background-color: #F8F5EC;
+    color: #89BCD9;
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+}
+
+
+
+@media screen and (max-width: 1470px) {
+    .privacy-component {
+        width: 1200px;
+
+
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .privacy-component {
+        width: 800px;
+
+        h3{
+            font-size: 45px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .privacy-component {
+        width: 610px;
+
+        h1{
+            font-size: 60px;
+        }
+
+        h2{
+            font-size: 60px;
+        }
+
+        p{
+            width: 610px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .privacy-component {
+        width: 450px !important;
+
+        p{
+            width: 430px;
+        }
+    }
+
+    a{
+        max-width: 430px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :host{
+        display: flex;
+        justify-content: center;
+    }
+    .privacy-component{
+        width: 310px !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            font-size: 45px;
+            font-weight: 300;
+        }
+
+
+    }
+}

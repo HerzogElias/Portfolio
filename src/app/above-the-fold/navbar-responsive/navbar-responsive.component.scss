@@ -1,11 +1,21 @@
-.navbar-respo-component{
-    background-image: url('/img/navbar_repo/Property 1=Default.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 600px;
-    height: 620px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+:host{
+    display: none;
+}
+
+
+@media screen and (max-width: 1230px) {
+    :host{
+        display: flex;
+    }
+    .navbar-respo-component{
+        background-image: url('/img/navbar_repo/Property 1=Default.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 620px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
