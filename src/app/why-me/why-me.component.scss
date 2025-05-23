@@ -107,10 +107,6 @@
     .why-me-component {
         width: 610px;
     }
-
-    .why-me-content {
-        width: 610px !important;
-    }
 }
 
 
@@ -142,9 +138,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    :host {
+:host {
   display: flex;
   justify-content: center;
+  width: 310px !important;
     }
 
     .why-me-component {

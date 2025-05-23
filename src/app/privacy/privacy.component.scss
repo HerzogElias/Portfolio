@@ -115,20 +115,34 @@ button{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
     :host{
         display: flex;
         justify-content: center;
+        width: 310px !important;
     }
     .privacy-component{
         width: 310px !important;
-        justify-content: flex-start;
         align-items: flex-start;
+        justify-content: flex-start;
         h3{
             font-size: 45px;
             font-weight: 300;
         }
 
+        p{
+            width: 310px;
+        }
+
+        span{
+            width: 310px;
+        }
+
+        h1,h2,h3{
+            width: 310px;
+            word-wrap: break-word;
+            margin-left:0;
+        }
 
     }
 }

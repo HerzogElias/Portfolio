@@ -1,16 +1,16 @@
 <div class="navbar-respo-component">
-    <div class="navbar-component-logo">
-       <img src="/img/abovethefold/logo.png" alt="logo">
-    </div>
-    <div class="navbar">
-       <a href="#whyme">{{ 'navbar.whyMe' | translate }}</a>
-       <a href="#skills">{{ 'navbar.skills' | translate }}</a>
-       <a href="#projects">{{ 'navbar.projects' | translate }}</a>
-       <a href="#contact">{{ 'navbar.contact' | translate }}</a>
-    </div>
- 
-    <div class="navbar-component-switchlanguage">
-       <button (click)="toogleTranslation('de')">DE</button>
-       <button (click)="toogleTranslation('en')">EN</button>
-    </div>
- </div>
+   <div class="navbar-component-logo">
+      <img src="/img/abovethefold/logo.png" alt="logo">
+   </div>
+   <div class="navbar">
+      <a href="#whyme">{{ 'navbar.whyMe' | translate }}</a>
+      <a href="#skills">{{ 'navbar.skills' | translate }}</a>
+      <a href="#projects">{{ 'navbar.projects' | translate }}</a>
+      <a href="#contact">{{ 'navbar.contact' | translate }}</a>
+   </div>
+
+   <div class="navbar-component-switchlanguage">
+      <button ngClass="{active-lang:currentLang === 'de'}" (click)="toogleTranslation('de')">DE</button>
+      <button ngClass="{active-lang:currentLang === 'en'}" (click)="toogleTranslation('en')">EN</button>
+   </div>
+</div>

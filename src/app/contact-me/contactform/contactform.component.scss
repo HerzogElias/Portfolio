@@ -88,6 +88,15 @@ label {
   }
 }
 
+a {
+  color: #89BCD9;
+}
+
+.privacy-contact{
+  display: flex;
+  align-items: center;
+
+}
 @media screen and (max-width: 1470px) {
 .contactForm-textinputs{
   flex-direction: column;

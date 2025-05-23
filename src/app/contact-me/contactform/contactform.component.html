@@ -16,21 +16,21 @@
         <textarea [(ngModel)]="contactData.message" name="message" id="message" required></textarea>
       </div>
   
-      <div class="form-group">
+      <div class="privacy-contact">
         <input type="checkbox" 
                name="privacyAccepted"          
                [(ngModel)]="privacyAccepted"    
                id="privacyAccepted" 
                class="checkbox"
-               required>                    
-        <label for="privacyAccepted">Ich akzeptiere die Datenschutzverordnung</label>
+               required>                   
+        <label for="privacyAccepted"> {{'contact.privacy.eins' | translate}} <a href="/privacy"> {{'contact.privacy.zwei'|translate}}</a>  </label>
       </div>
   
       <div class="form-group">
         <input 
           type="submit" 
           value="Submit" 
-          class="input-submit"
+          class="inputsubmit"
           [disabled]="!contactForm.valid || !privacyAccepted">
       </div>
     </form>

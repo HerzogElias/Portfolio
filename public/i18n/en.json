@@ -72,6 +72,10 @@
     },
     
       "contact": {
+        "privacy":{
+          "eins": "I accept the",
+          "zwei": "Privacy Policity"
+        },
         "header": "Contact me",
         "text": "Contact me: Feel free to reach out to get in touch with me. I would be happy to discuss further details. I am open to positions in the frontend field. Contact: contact@elias-herzog.de"
       }
