@@ -10,8 +10,8 @@
    </div>
 
    <div class="navbar-component-switchlanguage">
-      <button ngClass="{active-lang:currentLang === 'de'}" (click)="toogleTranslation('de')" >DE</button>
-      <button ngClass="{active-lang:currentLang === 'en'}" (click)="toogleTranslation('en')">EN</button>
+      <button [class.active-lang]="currentLang === 'de'" (click)="toogleTranslation('de')" >DE</button>
+      <button [class.active-lang]="currentLang === 'en'" (click)="toogleTranslation('en')">EN</button>
    </div>
 </div>
 

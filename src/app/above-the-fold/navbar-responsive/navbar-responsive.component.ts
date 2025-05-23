@@ -9,7 +9,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar-responsive.component.scss'
 })
 export class NavbarResponsiveComponent {
-  currentLang: string = 'de';
+  currentLang:string = 'de';
   constructor(private translate:TranslateService) {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
