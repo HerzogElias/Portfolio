@@ -143,6 +143,16 @@
     .above-the-fold-resp-menue{
         width: 100%;
     }
+
+    .above-the-fold-portrait{
+        width: 600px;
+        height: 573px;
+    }
+
+    .menu-dropdown{
+        width: 630px;
+        height: 590px;
+    }
  }
 
  @media screen and (max-width: 640px) {
@@ -154,6 +164,11 @@
         width: 450px;
         height: 470px;
         background-size: contain;
+    }
+
+    .menu-dropdown {
+        width: 450px;
+        height: 470px;
     }
  }
 
@@ -178,5 +193,10 @@
             object-fit: cover;
             transform: scale(1.09);
         };
+    }
+
+    .menu-dropdown{
+        width: 295px;
+        height: 310px;
     }
  }

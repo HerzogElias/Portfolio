@@ -7,6 +7,32 @@ button.active-lang {
     color: blue;
   }
 
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    a{
+        color: black;
+        height: 31px;
+        text-decoration: none;
+
+        font-family: 'Josefin Sans';
+        font-size: 26px;
+        margin-top: 16px;
+    }
+}
+
+button{
+    background-color: #89BCD9;
+    border:none;
+
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+}
+
 @media screen and (max-width: 1230px) {
     :host{
         display: flex;
@@ -22,4 +48,61 @@ button.active-lang {
         align-items: center;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 850px) {
+    :host{
+        display: flex;
+    }
+    .navbar-respo-component{
+        background-image: url('/img/navbar_repo/Property 1=Default.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 573px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:640px){
+    :host{
+        display: flex;
+    }
+       .navbar-respo-component{
+        background-image: url('/img/navbar_repo/Property 1=Default.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 450px;
+        height: 470px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    :host{
+        display: flex;
+    }
+
+.navbar-respo-component{
+         background-image: url('/img/navbar_repo/Property 1=Default.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 295px;
+        height: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.navbar-component-logo{
+    display: none;
+}
 }
