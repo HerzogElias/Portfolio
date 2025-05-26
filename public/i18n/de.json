@@ -77,5 +77,11 @@
         "header": "Kontakt",
         "text": "Kontaktieren Sie mich: Melden Sie sich gerne um mit mir in Kontakt zu treten. Gerne besprechen wir weitere Details. Ich bin offen für Stellen im Frontend-Bereich. Kontakt: contact@elias-herzog.de"
       }
+  ,
+      "imprint": {
+        "header": "Impressum",
+        "contact": "Kontakt",
+         "mobile": "Mobil:"
+      }
   }
   

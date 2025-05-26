@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../above-the-fold/navbar/navbar.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-imprint',
-  imports: [NavbarComponent],
+  imports: [TranslateModule],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })

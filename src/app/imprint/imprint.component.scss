@@ -32,13 +32,19 @@
      }
 }
 
-button{
-    margin-top: 32px;
-    width: 156px;
-    height: 52px;
-    background-color: #F8F5EC;
-    color: #89BCD9;
-    font-size: 18px;
-    font-family: 'Josefin Sans';
-}
+    button {
+        background-color: #89BCD9;
+        color: #1a1a1a;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 999px;
+        cursor: pointer;
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 18px;
+
+        &:hover {
+            background-color: #78AAC6;  
+        }
+    }
 

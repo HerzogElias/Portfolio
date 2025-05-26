@@ -98,7 +98,7 @@ a {
 }
 
 .inputsubmit{
-          background-color: #89BCD9;
+        background-color: #89BCD9;
         color: #1a1a1a;
         border: none;
         padding: 10px 24px;
@@ -107,6 +107,9 @@ a {
         font-family: 'Josefin Sans';
         font-weight: 400;
         font-size: 18px;
+        width: 300px;
+        margin-bottom: 0;
+  
 
         &:hover {
             background-color: #78AAC6;  
@@ -117,8 +120,20 @@ a {
           cursor: not-allowed;
         }
 }
+
+.contact-accepttion{
+  display: flex;
+justify-content: center;
+align-items: center;
+  gap: 32px;
+  margin-bottom: 24px;
+}
 @media screen and (max-width: 1470px) {
 .contactForm-textinputs{
+  flex-direction: column;
+}
+
+.contact-accepttion{
   flex-direction: column;
 }
 
@@ -143,5 +158,9 @@ textarea{
 input[type=text]{
   width: 280px;
   padding-left: 16px;
+}
+
+.inputsubmit{
+  width: 200px;
 }
 }

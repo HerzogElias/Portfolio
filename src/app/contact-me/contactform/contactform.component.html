@@ -16,6 +16,7 @@
         <textarea [(ngModel)]="contactData.message" name="message" id="message" required></textarea>
       </div>
   
+      <div class="contact-accepttion"> 
       <div class="privacy-contact">
         <input type="checkbox" 
                name="privacyAccepted"          
@@ -26,12 +27,13 @@
         <label for="privacyAccepted"> {{'contact.privacy.eins' | translate}} <a href="/privacy"> {{'contact.privacy.zwei'|translate}}</a>  </label>
       </div>
   
-      <div class="form-group">
+      <div>
         <input 
           type="submit" 
           value="Submit" 
           class="inputsubmit"
           [disabled]="!contactForm.valid || !privacyAccepted">
+      </div>
       </div>
     </form>
   </div>
