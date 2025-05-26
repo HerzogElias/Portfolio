@@ -48,3 +48,16 @@
         }
     }
 
+@media screen and (max-width:500px){
+    :host{
+        margin-left: 0;
+    }
+    
+    .imprint-component{
+    h3{
+        font-size: 45px;
+        font-weight: 300;
+    }
+   }
+}
+
