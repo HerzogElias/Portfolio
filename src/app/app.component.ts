@@ -15,6 +15,7 @@ import { NavbarComponent } from "./above-the-fold/navbar/navbar.component";
 })
 export class AppComponent implements OnInit{
   title = 'portfolio';
+router: any;
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
