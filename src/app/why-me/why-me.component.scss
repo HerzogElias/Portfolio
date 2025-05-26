@@ -56,26 +56,31 @@
     }
 
     button {
-        width: 134px;
-        height: 48px;
-        background-color: transparent;
-        color: #89BCD9;
-        border: 1px solid #89BCD9;
-        border-radius: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        background-color: #89BCD9;
+        color: #1a1a1a;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 999px;
+        cursor: pointer;
         font-family: 'Josefin Sans';
         font-weight: 400;
         font-size: 18px;
 
+        &:hover {
+            background-color: #78AAC6;  
+        }
     }
 
-    a {
-        text-decoration: none;
-    }
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 18px;
+
 }
+
+a {
+    text-decoration: none;
+}
+
 
 .why-me-contact {
     display: flex;
@@ -138,10 +143,10 @@
 }
 
 @media screen and (max-width: 500px) {
-:host {
-  display: flex;
-  justify-content: center;
-  width: 310px !important;
+    :host {
+        display: flex;
+        justify-content: center;
+        width: 310px !important;
     }
 
     .why-me-component {

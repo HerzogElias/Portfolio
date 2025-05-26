@@ -1,9 +1,9 @@
 .imprint-component{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    height: auto;
+    flex: 1;
 
     h3 {
         font-family: Anta;
