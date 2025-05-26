@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet,Router } from '@angular/router';
 import { FooterComponent } from "./shared/footer/footer.component";
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule} from '@ngx-translate/core';
@@ -15,9 +15,8 @@ import { NavbarComponent } from "./above-the-fold/navbar/navbar.component";
 })
 export class AppComponent implements OnInit{
   title = 'portfolio';
-router: any;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, public router: Router) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('de');
     this.translate.use('de');
