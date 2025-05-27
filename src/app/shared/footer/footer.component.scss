@@ -31,6 +31,15 @@
     gap: 10px; 
 }
 
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 104px;
+    gap: 32px;
+    
+}
 
 
 @media screen and (max-width: 640px) {
@@ -40,15 +49,25 @@
     }
     .footer-component{
         flex-direction: column;
-        height: auto;
+        height: 204px;
         padding-top: 16px;
+    }
+
+    .footer-content{
+        width: 500px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .footer-component{
         flex-direction: column;
-        height: auto;
+        height: 350px;
         padding-top: 16px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
     }
 }

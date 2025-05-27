@@ -1,43 +1,43 @@
 input[type=text] {
-    width: 445px;
-    height: 60px;
-    
-    border-radius: 30px;
-    border: 1px solid #89BCD9;
-    background-color: #2d3748;
-    outline: none;
-    
-    color: #89BCD9;
+  width: 445px;
+  height: 60px;
 
-    font-family: 'Josefin Sans';
-    font-size: 16px;
-    font-weight: 300;
-  }
+  border-radius: 30px;
+  border: 1px solid #89BCD9;
+  background-color: #2d3748;
+  outline: none;
 
-textarea{
-    width: 911px;
-    height: 146px;
-    
-    border-radius: 30px;
-    border: 1px solid #89BCD9;
-    background-color: #2d3748;
-    outline: none;
+  color: #89BCD9;
 
-    color: #89BCD9;
-    font-family: 'Josefin Sans';
-    font-size: 16px;
-
-    padding-left: 16px;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.contactForm-textinputs{
+textarea {
+  width: 911px;
+  height: 146px;
+
+  border-radius: 30px;
+  border: 1px solid #89BCD9;
+  background-color: #2d3748;
+  outline: none;
+
+  color: #89BCD9;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+
+  padding-left: 16px;
+}
+
+.contactForm-textinputs {
   display: flex;
   gap: 16px;
 }
 
-.contactForm-section{
+.contactForm-section {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -75,7 +75,7 @@ label {
 
   &:checked {
     background-color: #2d3748;
-    border-color:#89BCD9;
+    border-color: #89BCD9;
     background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M6.173 14.727L0 8.553l2.066-2.066 4.107 4.107L13.934 2.933 16 5l-9.827 9.727z"/></svg>');
     background-repeat: no-repeat;
     background-position: center;
@@ -92,75 +92,143 @@ a {
   color: #89BCD9;
 }
 
-.privacy-contact{
+.privacy-contact {
   display: flex;
   align-items: center;
 }
 
-.inputsubmit{
-        background-color: #89BCD9;
-        color: #1a1a1a;
-        border: none;
-        padding: 10px 24px;
-        border-radius: 999px;
-        cursor: pointer;
-        font-family: 'Josefin Sans';
-        font-weight: 400;
-        font-size: 18px;
-        width: 300px;
-        margin-bottom: 0;
-  
+.inputsubmit {
+  background-color: #89BCD9;
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 18px;
+  width: 300px;
+  margin-bottom: 0;
 
-        &:hover {
-            background-color: #78AAC6;  
-        }
 
-        &:disabled{
-          background-color: grey;
-          cursor: not-allowed;
-        }
+  &:hover {
+    background-color: #78AAC6;
+  }
+
+  &:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
 }
 
-.contact-accepttion{
+.contact-accepttion {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 32px;
   margin-bottom: 24px;
 }
+
+.contact-thankyou-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 640px;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.contact-thankyou {
+  background: #89BCD9;
+  color: #2d3748;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+width: 600px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+
 @media screen and (max-width: 1470px) {
-.contactForm-textinputs{
-  flex-direction: column;
+  .contactForm-textinputs {
+    flex-direction: column;
+  }
+
+  .contact-accepttion {
+    flex-direction: column;
+  }
+
+  textarea {
+    width: 445px;
+  }
 }
 
-.contact-accepttion{
-  flex-direction: column;
-}
+ @media screen and (max-width: 640px) {
+    :host{
+        width: 450px;
+    }
 
-textarea{
-  width: 445px;
-}
-}
+  .contact-thankyou-overlay {
+    width: 450px;
+  }
 
-@media screen and (max-width:500px){
-:host{
-  width: 310px;
-}
-.contact-component{
-  width: 310px;
-}
+  .contact-thankyou{
+    width: 400px;
+  }
+ }
 
-textarea{
-  width: 280px;
-  padding-left: 16px;
-}
+@media screen and (max-width:500px) {
+  :host {
+    width: 310px;
+  }
 
-input[type=text]{
-  width: 280px;
-  padding-left: 16px;
-}
+  .contact-component {
+    width: 310px;
+  }
 
-.inputsubmit{
-  width: 200px;
+  textarea {
+    width: 280px;
+    padding-left: 16px;
+  }
+
+  input[type=text] {
+    width: 280px;
+    padding-left: 16px;
+  }
+
+  .inputsubmit {
+    width: 200px;
+  }
+
+  .contact-thankyou-overlay{
+    display: flex;
+    align-items: center;
+    width: 310px;
+  }
+
+  .contact-thankyou {
+  background: #89BCD9;
+  color: #2d3748;
+  padding:0px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
 }
 }

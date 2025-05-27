@@ -1,9 +1,8 @@
-
-:host{
+:host {
     height: 100vh !important;
 }
 
-.imprint-component{
+.imprint-component {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -21,50 +20,52 @@
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         color: #F8F5EC;
         font-size: 18px;
         font-family: 'Josefin Sans';
     }
 
-    a{
-        color: #F8F5EC;   
-     }
+    a {
+        color: #F8F5EC;
+    }
 }
 
-    button {
-        background-color: #89BCD9;
-        color: #1a1a1a;
-        border: none;
-        padding: 10px 24px;
-        border-radius: 999px;
-        cursor: pointer;
-        font-family: 'Josefin Sans';
-        font-weight: 400;
-        font-size: 18px;
+button {
+    background-color: #89BCD9;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 18px;
 
-        &:hover {
-            background-color: #78AAC6;  
-        }
+    &:hover {
+        background-color: #78AAC6;
     }
+}
 
 
 @media screen and (max-width: 1230px) {
-  .imprint-component{
-    height: calc(100vh - 214px) !important;
-}
+    .imprint-component {
+        height: calc(100vh - 214px) !important;
+    }
 }
 
-@media screen and (max-width:500px){
-    :host{
+@media screen and (max-width:500px) {
+    :host {
         margin-left: 0;
     }
-    
-    .imprint-component{
-    h3{
-        font-size: 45px;
-        font-weight: 300;
-    }
-   }
-}
 
+    .imprint-component {
+        height: calc(100vh - 350px - 16px) !important;
+
+        h3 {
+            font-size: 45px;
+            font-weight: 300;
+        }
+    }
+
+}

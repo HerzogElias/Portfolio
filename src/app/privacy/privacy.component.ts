@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../above-the-fold/navbar/navbar.component";
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-privacy',
-  imports: [NavbarComponent],
+  imports: [RouterModule],
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss'
 })
