@@ -9,7 +9,7 @@
     justify-content: space-evenly;
     flex-direction: column;
     flex: 1;
-    height: calc(100vh - 340px) !important;
+    height: calc(100vh - 318px) !important;
 
 
     h3 {
@@ -47,6 +47,13 @@
             background-color: #78AAC6;  
         }
     }
+
+
+@media screen and (max-width: 1230px) {
+  .imprint-component{
+    height: calc(100vh - 214px) !important;
+}
+}
 
 @media screen and (max-width:500px){
     :host{

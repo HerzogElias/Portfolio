@@ -1,9 +1,14 @@
+
+:host{
+    scroll-margin-top: 250px;
+}
 .why-me-component {
     display: flex;
     width: 1440px;
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    scroll-margin-top: 150px;
 
     h3 {
         font-family: Anta;

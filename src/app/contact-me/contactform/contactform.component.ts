@@ -34,9 +34,7 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    console.log(this.contactData)
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest &&this.privacyAccepted) {
-      console.log('kommt in den if teil rein')
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
