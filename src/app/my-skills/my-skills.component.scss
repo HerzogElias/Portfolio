@@ -1,4 +1,4 @@
-:host{
+:host {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +8,7 @@
     width: 1440px;
     justify-content: center;
     flex-direction: column;
+    scroll-margin-top: 130px;
 
     h3 {
         font-family: Anta;
@@ -28,12 +29,12 @@
 
 .my-skills-icons {
     width: 408px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    
+
     img {
         width: 50px;
         height: 50px;
@@ -53,7 +54,7 @@
 
 }
 
-.my-skills-learningprogramming-detail{
+.my-skills-learningprogramming-detail {
     width: 80%;
 
     color: #FFFDFD;
@@ -62,34 +63,35 @@
     text-align: center;
 }
 
-.my-skills-learningprogramming-icons{
+.my-skills-learningprogramming-icons {
     display: flex;
     gap: 16px;
     justify-content: center;
 }
 
-.my-skills-learningprogramming-respo{
+.my-skills-learningprogramming-respo {
     display: none !important;
 }
 
 @media screen and (max-width: 1470px) {
-  .my-skills-component{
-    width: 1200px;
-  }
+    .my-skills-component {
+        width: 1200px;
+    }
 }
 
 @media screen and (max-width: 1230px) {
-    .my-skills-component{
-     width: 800px;
+    .my-skills-component {
+        width: 800px;
     }
- }
+}
 
- @media screen and (max-width: 850px) {
-    .my-skills-component{
-     width: 610px;
-     margin-top: 64px;
+@media screen and (max-width: 850px) {
+    .my-skills-component {
+        width: 610px;
+        margin-top: 64px;
     }
-    .my-skills-content{
+
+    .my-skills-content {
         flex-direction: column;
         align-items: center;
     }
@@ -97,6 +99,7 @@
     .my-skills-learningprogramming {
         display: none !important;
     }
+
     .my-skills-learningprogramming-respo {
         display: flex !important;
         justify-content: center;
@@ -104,11 +107,11 @@
         flex-direction: column;
         margin: auto;
 
-        h5{
+        h5 {
             color: #89BCD9;
             font-family: Josefin Sans;
             font-size: 16px;
-            
+
         }
     }
 
@@ -119,7 +122,7 @@
         font-size: 16px;
     }
 
-    .my-skills-learningprogramming-respo-content{
+    .my-skills-learningprogramming-respo-content {
         display: flex;
         gap: 16px;
         width: 100%;
@@ -138,32 +141,34 @@
 }
 
 @media screen and (max-width: 640px) {
-    .my-skills-component{
+    .my-skills-component {
         display: flex;
         width: 450px !important;
     }
-    
+
 }
 
 @media screen and (max-width: 500px) {
-    :host{
+    :host {
         display: flex;
         justify-content: center;
         width: 310px;
     }
-    .my-skills-component{
+
+    .my-skills-component {
         width: 310px !important;
-        h3{
+
+        h3 {
             font-size: 45px;
             font-weight: 300;
         }
     }
 
-    .my-skills-icons{
+    .my-skills-icons {
         width: 310px;
     }
 
-    .my-skills-learningprogramming-respo-content{
+    .my-skills-learningprogramming-respo-content {
         margin-top: 16px;
     }
 }

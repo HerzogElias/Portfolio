@@ -6,6 +6,7 @@
 
 .my-projects-component {
     width: 1440px;
+    scroll-margin-top: 130px;
 
     h3 {
         font-family: Anta;
@@ -113,20 +114,23 @@
 }
 
 @media screen and (max-width: 500px) {
-    :host{
+    :host {
         display: flex;
         justify-content: center;
     }
-    .my-projects-component{
+
+    .my-projects-component {
         width: 310px !important;
         justify-content: flex-start;
         align-items: flex-start;
-        h3{
+
+        h3 {
             font-size: 45px;
             font-weight: 300;
         }
     }
-    .my-projects-projects{
+
+    .my-projects-projects {
         width: 310px;
     }
 }

@@ -11,13 +11,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './what-my-colleguas-say.component.scss'
 })
 export class WhatMyColleguasSayComponent {
-rezessions:Rezession[] = [{
-    name:'whatMyColleguasSay.teamPlayer.vitalij.name',
-    projekt: 'whatMyColleguasSay.teamPlayer.vitalij.project',
-    rezession: 'whatMyColleguasSay.teamPlayer.vitalij.feedback', 
-    linkedin: "https://www.linkedin.com/in/vitalij-schwab/"
-  },
-  {
+rezessions:Rezession[] = [
+{
     name:'whatMyColleguasSay.teamPlayer.florian.name',
     projekt: 'whatMyColleguasSay.teamPlayer.florian.project',
     rezession: 'whatMyColleguasSay.teamPlayer.florian.feedback', 

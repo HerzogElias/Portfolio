@@ -46,20 +46,15 @@
     "whatMyColleguasSay": {
       "header": {
         "eins": "Need a Teamplayer?",
-        "zwei": "Here's what my colleagues say about me"
+        "zwei": "Here's what my colleagues say about me",
+        "linkedin": "Link to LinkedIn"
       },
       "projecttitle":"Project",
       "teamPlayer": {
-        "vitalij": {
-          "name": "Vitalij Schwab",
-          "project": "Sharky",
-          "feedback": "I was always able to work excellently with Elias. His structured and solution-oriented way of working makes every project efficient and enjoyable. Particularly, debugging and solving problems together was always fun – he brings not only expertise but also a positive attitude. I'm looking forward to more collaborations!",
-          "linkedin": "https://www.linkedin.com/in/vitalij-schwab/"
-        },
         "florian": {
           "name": "Florian Zunke",
           "project": "Join",
-          "feedback": "Elias wrote complex and clean code during our project work, which helped drive the project forward. His friendly and nice demeanor made the collaboration very enjoyable.",
+          "feedback": "Elias wrote complex and cleaKlagliedn code during our project work, which helped drive the project forward. His friendly and nice demeanor made the collaboration very enjoyable.",
           "linkedin": "https://www.linkedin.com/in/florian-zunke-b18420328/"
         },
         "kai": {

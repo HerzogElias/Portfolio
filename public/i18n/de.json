@@ -45,16 +45,11 @@
     "whatMyColleguasSay": {
       "header": {
         "eins": "Teamplayer benötigt?",
-        "zwei": "Das sagen meine Kollegen über mich"
+        "zwei": "Das sagen meine Kollegen über mich",
+        "linkedin": "LinkedIn Profil"
       },
       "projecttitle": "Projekt",
       "teamPlayer": {
-        "vitalij": {
-          "name": "Vitalij Schwab",
-          "project": "Sharky",
-          "feedback": "Mit Elias konnte ich immer hervorragend zusammenarbeiten. Seine strukturierte und lösungsorientierte Arbeitsweise macht jedes Projekt effizient und angenehm. Besonders das gemeinsame Debuggen und Lösen von Problemen hat immer Spaß gemacht – er bringt nicht nur Fachwissen, sondern auch eine positive Einstellung mit. Ich freue mich auf weitere Zusammenarbeit!",
-          "linkedin": "https://www.linkedin.com/in/vitalij-schwab/"
-        },
         "florian": {
           "name": "Florian Zunke",
           "project": "Join",
