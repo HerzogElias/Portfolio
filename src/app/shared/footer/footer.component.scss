@@ -8,7 +8,7 @@
     height: 214px;
     background-color: #89BCD9;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: auto;
 }
@@ -34,7 +34,7 @@
 .footer-content{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 1440px;
     height: 104px;
     gap: 32px;
