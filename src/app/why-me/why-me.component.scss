@@ -147,11 +147,13 @@ a {
     :host {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 310px !important;
+
     }
 
     .why-me-component {
-        width: 310px !important;
+        width: 90%;
 
         h3 {
             font-size: 40px;
@@ -168,7 +170,7 @@ a {
         padding-left: 8px;
         padding-right: 8px;
         height: auto;
-        width: 310px;
+        width: 280px;
     }
 
     .why-me-located {
@@ -178,5 +180,9 @@ a {
 
     .why-me-title {
         text-align: center;
+    }
+
+    .why-me-contact{
+        display: none;
     }
 }
