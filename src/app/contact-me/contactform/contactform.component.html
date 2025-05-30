@@ -66,16 +66,17 @@
         <a [routerLink]="['/privacy']">{{ 'contact.privacy.zwei' | translate }}</a>
       </label>
     </div>
-  </div>
 
-  <!-- SUBMIT -->
-  <div>
+      <div>
     <input 
       type="submit" 
       value="Submit" 
       class="inputsubmit"
       [disabled]="!contactForm.valid || !privacyAccepted">
   </div>
+  </div>
+
+
 </form>
 
 <div 
