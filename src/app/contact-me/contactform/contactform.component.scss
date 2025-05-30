@@ -143,7 +143,7 @@ a {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
-  
+
   &.visible {
     opacity: 1;
     pointer-events: auto;
@@ -161,10 +161,17 @@ a {
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
-width: 600px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  display: block;
+}
 
 @media screen and (max-width: 1470px) {
   .contactForm-textinputs {
@@ -180,19 +187,19 @@ width: 600px;
   }
 }
 
- @media screen and (max-width: 640px) {
-    :host{
-        width: 450px;
-    }
+@media screen and (max-width: 640px) {
+  :host {
+    width: 450px;
+  }
 
   .contact-thankyou-overlay {
     width: 450px;
   }
 
-  .contact-thankyou{
+  .contact-thankyou {
     width: 400px;
   }
- }
+}
 
 @media screen and (max-width:500px) {
   :host {
@@ -217,18 +224,18 @@ width: 600px;
     width: 200px;
   }
 
-  .contact-thankyou-overlay{
+  .contact-thankyou-overlay {
     display: flex;
     align-items: center;
     width: 310px;
   }
 
   .contact-thankyou {
-  background: #89BCD9;
-  color: #2d3748;
-  padding:0px;
-  border-radius: 10px;
-  text-align: center;
-  width: 250px;
-}
+    background: #89BCD9;
+    color: #2d3748;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+  }
 }

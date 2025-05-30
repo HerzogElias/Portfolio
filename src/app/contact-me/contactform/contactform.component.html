@@ -1,45 +1,82 @@
-<div class="contactForm-section">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <div class="contactForm-textinputs">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input [(ngModel)]="contactData.name" name="name" type="text" id="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input [(ngModel)]="contactData.email" name="email" type="text" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-        </div>
-      </div>
-  
-      <div class="form-group">
-        <label for="message">Subject</label>
-        <textarea [(ngModel)]="contactData.message" name="message" id="message" required></textarea>
-      </div>
-  
-      <div class="contact-accepttion"> 
-<div class="privacy-contact">
-  <input type="checkbox" 
-         name="privacyAccepted"          
-         [(ngModel)]="privacyAccepted"    
-         id="privacyAccepted" 
-         class="checkbox"
-         required>                   
-  <label for="privacyAccepted">
-    {{ 'contact.privacy.eins' | translate }}
-    <a [routerLink]="['/privacy']">{{ 'contact.privacy.zwei' | translate }}</a>
-  </label>
-</div>
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  <div class="contactForm-textinputs">
 
-  
-      <div>
-        <input 
-          type="submit" 
-          value="Submit" 
-          class="inputsubmit"
-          [disabled]="!contactForm.valid || !privacyAccepted">
-      </div>
-      </div>
-    </form>
+    <!-- NAME -->
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        [(ngModel)]="contactData.name"
+        name="name"
+        type="text"
+        id="name"
+        required
+        #nameRef="ngModel">
+      
+      @if (!nameRef.valid && nameRef.touched) {
+        <span class="error">Bitte gib deinen Namen ein</span>
+      }
+    </div>
+
+    <!-- EMAIL -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        [(ngModel)]="contactData.email"
+        name="email"
+        type="text"
+        id="email"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        #emailRef="ngModel">
+      
+      @if (!emailRef.valid && emailRef.touched) {
+        <span class="error">Bitte gib eine gültige Email-Adresse ein</span>
+      }
+    </div>
+
+  </div>
+
+  <!-- MESSAGE -->
+  <div class="form-group">
+    <label for="message">Nachricht</label>
+    <textarea
+      [(ngModel)]="contactData.message"
+      name="message"
+      id="message"
+      required
+      #messageRef="ngModel"></textarea>
+
+    @if (!messageRef.valid && messageRef.touched) {
+      <span class="error">Bitte gib eine Nachricht ein</span>
+    }
+  </div>
+
+  <!-- PRIVACY CHECKBOX -->
+  <div class="contact-accepttion"> 
+    <div class="privacy-contact">
+      <input
+        type="checkbox" 
+        name="privacyAccepted"          
+        [(ngModel)]="privacyAccepted"    
+        id="privacyAccepted" 
+        class="checkbox"
+        required>                   
+      <label for="privacyAccepted">
+        {{ 'contact.privacy.eins' | translate }}
+        <a [routerLink]="['/privacy']">{{ 'contact.privacy.zwei' | translate }}</a>
+      </label>
+    </div>
+  </div>
+
+  <!-- SUBMIT -->
+  <div>
+    <input 
+      type="submit" 
+      value="Submit" 
+      class="inputsubmit"
+      [disabled]="!contactForm.valid || !privacyAccepted">
+  </div>
+</form>
 
 <div 
   class="contact-thankyou-overlay" 
@@ -50,5 +87,3 @@
   </div>
 </div>
 
-  </div>
-  
