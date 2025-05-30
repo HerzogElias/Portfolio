@@ -68,7 +68,7 @@
         font-size: 18px;
 
         &:hover {
-            background-color: #78AAC6;  
+            background-color: #78AAC6;
         }
     }
 
@@ -115,7 +115,6 @@ a {
     }
 }
 
-
 @media screen and (max-width: 640px) {
     :host {
         display: flex;
@@ -148,11 +147,13 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
         width: 310px !important;
 
     }
 
     .why-me-component {
+        scroll-margin-top: 100px;
         h3 {
             font-size: 40px;
             font-weight: 300;
@@ -180,7 +181,7 @@ a {
         text-align: center;
     }
 
-    .why-me-contact{
+    .why-me-contact {
         display: none;
     }
 }

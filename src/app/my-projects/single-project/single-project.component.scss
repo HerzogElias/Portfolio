@@ -18,6 +18,16 @@
     }
 }
 
+.single-project-deteils-technologies {
+    p{
+         color: #F8F5EC;
+         text-align: center;
+         font-family: 'Joesfin Sans';
+         font-size: 18px;
+    }
+}
+
+
 .single-project-description-detail-title {
     display: flex;
     align-items: center;
@@ -51,7 +61,9 @@
     height: 315px;
     padding-bottom: 32px;
     padding-top: 32px;
+    border-radius: 15%;
 }
+
 
 .single-project-details-programmlanguage {
     display: flex;
@@ -193,7 +205,7 @@
     }
 
     .single-project-content {
-        width: 310px;
+        width: 310px !important;
     }
 
     .single-project-description-detail {

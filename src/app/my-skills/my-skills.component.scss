@@ -141,6 +141,12 @@
 }
 
 @media screen and (max-width: 640px) {
+    :host{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
     .my-skills-component {
         display: flex;
         width: 450px !important;
@@ -153,10 +159,12 @@
         display: flex;
         justify-content: center;
         width: 310px;
+    
     }
 
     .my-skills-component {
         width: 310px !important;
+        scroll-margin-top: 100px;
 
         h3 {
             font-size: 45px;

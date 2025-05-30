@@ -98,10 +98,14 @@
 }
 
 @media screen and (max-width: 640px) {
-
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
     .my-projects-component {
         width: 450px !important;
-        align-items: flex-start;
     }
 
     .my-projects-projects {
@@ -118,16 +122,26 @@
     :host {
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 310px !important;
     }
 
     .my-projects-component {
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        scroll-margin-top: 100px;
 
         h3 {
             font-size: 45px;
             font-weight: 300;
         }
+    }
+
+    .my-projects-projects-description{
+        gap: 0;
+    }
+    .my-projects-projects-activeproject{
+        width: 310px;
     }
 
     .my-projects-projects {

@@ -1,11 +1,10 @@
-import { Component, OnInit} from '@angular/core';
-import { RouterOutlet,Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, Router } from '@angular/router';
 import { FooterComponent } from "./shared/footer/footer.component";
 import { TranslateService } from '@ngx-translate/core';
-import { TranslateModule} from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import * as AOS from 'aos';
 import { NavbarComponent } from "./above-the-fold/navbar/navbar.component";
-
 
 @Component({
   selector: 'app-root',
@@ -13,7 +12,7 @@ import { NavbarComponent } from "./above-the-fold/navbar/navbar.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'portfolio';
 
   constructor(private translate: TranslateService, public router: Router) {
@@ -22,10 +21,18 @@ export class AppComponent implements OnInit{
     this.translate.use('de');
   }
 
-    ngOnInit() {
-      AOS.init({
-        duration: 1200,
-        once: true,     
-      });
-    }
+  ngOnInit() {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }
+
+  onActivate(event: any) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }
