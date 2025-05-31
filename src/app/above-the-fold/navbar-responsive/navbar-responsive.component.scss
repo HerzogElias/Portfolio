@@ -36,12 +36,10 @@ button{
 .above-the-fold-resp-menue{
     position: sticky;
     top: 0;
+    height: 104px;
 }
 
 @media screen and (max-width: 1230px) {
-    :host{
-        display: flex;
-    }
     .navbar-respo-component{
         background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
@@ -56,9 +54,6 @@ button{
 }
 
 @media screen and (max-width: 850px) {
-    :host{
-        display: flex;
-    }
     .navbar-respo-component{
         background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
@@ -72,9 +67,6 @@ button{
     }
 }
 @media screen and (max-width:640px){
-    :host{
-        display: flex;
-    }
        .navbar-respo-component{
         background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
@@ -91,9 +83,6 @@ button{
 
 
 @media screen and (max-width: 500px) {
-    :host{
-        display: flex;
-    }
 
 .navbar-respo-component{
          background-image: url('/img/navbar_repo/Property 1=Default.png');
