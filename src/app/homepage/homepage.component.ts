@@ -10,14 +10,10 @@ import { ContactMeComponent } from '../contact-me/contact-me.component';
 
 @Component({
   selector: 'app-homepage',
-  imports: [CommonModule,NavbarResponsiveComponent,AboveTheFoldComponent,WhyMeComponent,MySkillsComponent,MyProjectsComponent, WhatMyColleguasSayComponent,ContactMeComponent],
+  imports: [CommonModule,AboveTheFoldComponent,WhyMeComponent,MySkillsComponent,MyProjectsComponent, WhatMyColleguasSayComponent,ContactMeComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })
 export class HomepageComponent {
-    isMenuVisible: boolean = false; 
 
-  toggleMenu() {
-    this.isMenuVisible = !this.isMenuVisible;
-  }
 }

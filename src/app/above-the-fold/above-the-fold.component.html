@@ -1,4 +1,19 @@
-<div class="above-the-fold-container" id="above-the-fold"> 
+<div class="above-the-fold-container" id="above-the-fold-name"> 
+    <div class="above-the-fold-resp-menue">
+        <img 
+        class="burger-menue" 
+        src="/img/abovethefold/symple menu.png" 
+        alt="Burger-Menü"
+        (click)="toggleMenu()">
+    </div>
+
+    <div class="above-the-fold-portrait">
+        <img src="/img/abovethefold/portrait.png" alt="Portrait">
+        <div *ngIf="isMenuVisible" class="menu-dropdown">
+            <app-navbar-responsive></app-navbar-responsive>
+        </div> 
+    </div>
+
     <div class="above-the-fold-name">
         <img src="/img/abovethefold/logo.png">
         <h1>{{ 'aboveTheFold.name' | translate }}</h1>
