@@ -19,4 +19,10 @@ export class NavbarResponsiveComponent {
     this.translate.use(languae);
     const CURRENT_LANGUAGE = this.translate.currentLang;
   }
+
+    isMenuVisible: boolean = false; 
+
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
 }
