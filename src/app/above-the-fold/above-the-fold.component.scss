@@ -33,6 +33,7 @@
     img {
         width: 500px;
         height: 710px;
+        border-radius: 50%;
     }
 }
 
@@ -140,7 +141,6 @@
         top: 0;
         width: 600px;
         height: 619px;
-
     }
 }
 
@@ -211,18 +211,17 @@
     }
 
     .above-the-fold-portrait {
-        width: 310px;
-        height: 303px;
+        width: 280px;
+        height: 300px;
         background-position: center;
 
         img {
-            width: 270px;
+            width: 260px;
             height: 285px;
             object-fit: cover;
-            transform: scale(1.09);
+            transform: scale(1.07);
+            border-radius: 20%;
         }
-
-        ;
     }
     .menu-dropdown {
         width: 295px;

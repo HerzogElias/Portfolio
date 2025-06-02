@@ -5,7 +5,7 @@
 }
 
 .my-projects-component {
-    width: 1440px;
+    max-width: 1440px;
     scroll-margin-top: 130px;
 
     h3 {
@@ -68,44 +68,29 @@
 }
 
 @media screen and (max-width: 1470px) {
-    .my-projects-component {
-        width: 1200px;
-    }
-
     .my-projects-projects {
         width: 1200px;
     }
 }
 
 @media screen and (max-width: 1230px) {
-    .my-projects-component {
-        width: 800px;
-    }
-
     .my-projects-projects {
         width: 800px;
     }
 }
 
 @media screen and (max-width: 850px) {
-    .my-projects-component {
-        width: 610px;
-    }
-
     .my-projects-projects {
         width: 610px;
     }
 }
 
 @media screen and (max-width: 640px) {
-:host{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-}
-    .my-projects-component {
-        width: 450px !important;
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 
     .my-projects-projects {
@@ -124,12 +109,13 @@
         justify-content: center;
         align-items: center;
         width: 310px !important;
+        margin-top: 64px;
     }
 
     .my-projects-component {
         justify-content: center;
         align-items: center;
-        scroll-margin-top: 100px;
+        scroll-margin-top: 60px;
 
         h3 {
             font-size: 45px;
@@ -137,10 +123,11 @@
         }
     }
 
-    .my-projects-projects-description{
+    .my-projects-projects-description {
         gap: 0;
     }
-    .my-projects-projects-activeproject{
+
+    .my-projects-projects-activeproject {
         width: 310px;
     }
 

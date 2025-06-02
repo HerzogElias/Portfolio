@@ -19,7 +19,6 @@
     justify-content: space-between;
     width: 1440px;
     height: 104px;
-    
 }
 
 .navbar{   
@@ -66,7 +65,8 @@ button.active-lang {
         display: none;
     }
     .navbar{
-        width:auto
+        width:auto;
+        padding-left: 16px;
     }
 }
 

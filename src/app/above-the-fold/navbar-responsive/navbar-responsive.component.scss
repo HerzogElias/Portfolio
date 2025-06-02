@@ -1,22 +1,23 @@
 :host {
-  display: block;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  background: #89BCD9
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #89BCD9;
+    border-radius: 50px;
 }
 
 button.active-lang {
     background-color: white;
     color: blue;
-  }
+}
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    a{
+    a {
         color: black;
         height: 31px;
         text-decoration: none;
@@ -27,33 +28,36 @@ button.active-lang {
     }
 }
 
-button{
+button {
     background-color: #89BCD9;
-    border:none;
+    border: none;
 
     font-family: 'Josefin Sans';
     font-size: 16px;
 }
 
 .above-the-fold-resp-menue {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: fixed;
+    width: 1200px;
+    right: 16px;
+    margin-top: 16px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
 
-@media screen and (min-width: 1230px){
-    :host{
+@media screen and (min-width: 1230px) {
+    :host {
         display: none;
     }
 }
 
 @media screen and (max-width: 1230px) {
-    .navbar-respo-component{
+    .navbar-respo-component {
         background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -67,8 +71,7 @@ button{
 }
 
 @media screen and (max-width: 850px) {
- 
-    .navbar-respo-component{
+    .navbar-respo-component {
         background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -80,8 +83,9 @@ button{
         flex-direction: column;
     }
 }
-@media screen and (max-width:640px){
-       .navbar-respo-component{
+
+@media screen and (max-width:640px) {
+    .navbar-respo-component {
         background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -97,8 +101,8 @@ button{
 
 
 @media screen and (max-width: 500px) {
-.navbar-respo-component{
-         background-image: url('/img/navbar_repo/Property 1=Default.png');
+    .navbar-respo-component {
+        background-image: url('/img/navbar_repo/Property 1=Default.png');
         background-repeat: no-repeat;
         background-size: contain;
         width: 100vw;
@@ -111,7 +115,7 @@ button{
         box-sizing: border-box;
     }
 
-.navbar-component-logo{
-    display: none;
-}
+    .navbar-component-logo {
+        display: none;
+    }
 }

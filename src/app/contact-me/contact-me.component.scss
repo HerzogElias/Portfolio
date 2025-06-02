@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1440px;
+    max-width: 1440px;
 
     p {
         color: #F8F5EC;
@@ -52,18 +52,10 @@
     .contact-component {
         width: 1200px;
     }
-
-    .contact-content {
-        width: 1200px;
-    }
 }
 
 @media screen and (max-width: 1230px) {
     .contact-component {
-        width: 800px;
-    }
-
-    .contact-content {
         width: 800px;
     }
 
@@ -76,10 +68,6 @@
     .contact-component {
         width: 610px;
     }
-
-    .contact-content {
-        width: 610px;
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -90,15 +78,17 @@
     .contact-component {
         width: 430px;
     }
-
-    .contact-content {
-        width: 430px;
-    }
 }
 
 @media screen and (max-width:500px){
     :host{
         margin-left: 0;
+    }
+    
+    .contact-possibilities{
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
     }
     
    .contact-component{
@@ -108,9 +98,5 @@
         font-size: 45px;
         font-weight: 300;
     }
-   }
-
-   .contact-content{
-    width: 310px;
    }
 }
