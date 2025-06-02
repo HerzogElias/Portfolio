@@ -1,6 +1,6 @@
 .why-me-component {
     display: flex;
-    width: 1440px;
+    max-width: 1440px;
     justify-content: center;
     flex-direction: column;
     margin: auto;
@@ -18,15 +18,14 @@
 
 .why-me-content {
     display: flex;
-    width: 90%;
+    width: 100%;
 }
 
 .why-me-located {
-    width: 50%;
-    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
 
     img {
         width: 74px;
@@ -42,12 +41,11 @@
 }
 
 .why-me-text {
-    width: 50%;
-    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 
     span {
         color: #F8F5EC;
@@ -87,33 +85,17 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 100%;
     padding-top: 35px;
 
 }
 
 @media screen and (max-width: 1470px) {
-    .why-me-component {
-        width: 1200px;
-    }
-
     .why-me-content {
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media screen and (max-width: 1230px) {
-    .why-me-component {
-        width: 800px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .why-me-component {
-        width: 610px;
-    }
-}
 
 @media screen and (max-width: 640px) {
     :host {
@@ -123,21 +105,12 @@ a {
 
     .why-me-component {
         margin: 0;
-
-        h3 {
-            width: 90%;
-        }
     }
 
-    .why-me-text {
-        width: 430px;
-        height: auto;
-    }
 
     .why-me-located {
         margin-top: 16px;
         margin-bottom: 32px;
-        width: 90%;
         height: auto;
     }
 }
@@ -148,37 +121,34 @@ a {
         justify-content: center;
         align-items: center;
         margin: auto;
-        width: 310px !important;
+
 
     }
 
     .why-me-component {
         scroll-margin-top: 100px;
+
         h3 {
             font-size: 40px;
             font-weight: 300;
             text-align: center;
+            
         }
     }
 
     .why-me-content {
-        width: 310px !important;
+        padding-right: 8pxc;
     }
 
     .why-me-text {
         padding-left: 8px;
         padding-right: 8px;
         height: auto;
-        width: 280px;
     }
 
     .why-me-located {
         margin-top: 12px;
         margin-bottom: 24px;
-    }
-
-    .why-me-title {
-        text-align: center;
     }
 
     .why-me-contact {

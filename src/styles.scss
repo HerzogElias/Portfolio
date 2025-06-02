@@ -32,6 +32,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body.aos-animating {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 500px) {
 
   *,
