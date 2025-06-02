@@ -5,7 +5,7 @@
 }
 
 .my-skills-component {
-    width: 1440px;
+    max-width: 1440px;
     justify-content: center;
     flex-direction: column;
     scroll-margin-top: 130px;
@@ -74,21 +74,9 @@
     display: none !important;
 }
 
-@media screen and (max-width: 1470px) {
-    .my-skills-component {
-        width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1230px) {
-    .my-skills-component {
-        width: 800px;
-    }
-}
 
 @media screen and (max-width: 850px) {
     .my-skills-component {
-        width: 610px;
         margin-top: 64px;
     }
 
@@ -150,7 +138,6 @@
     }
     .my-skills-component {
         display: flex;
-        width: 450px !important;
     }
 
 }
@@ -165,7 +152,7 @@
 
     .my-skills-component {
         width: 310px !important;
-        scroll-margin-top: 100px;
+        scroll-margin-top: 60px;
 
         h3 {
             font-size: 45px;
@@ -180,11 +167,15 @@
     .my-skills-learningprogramming-respo-content {
         margin-top: 16px;
         gap: 8px;
+        max-width: 310px;
     }
 
-    
     .my-skills-learningprogramming-respo-programming {
         background-size: contain;
     
+    }
+
+    .my-skills-learningprogramming-respo-title{
+        max-width: 310px;
     }
 }

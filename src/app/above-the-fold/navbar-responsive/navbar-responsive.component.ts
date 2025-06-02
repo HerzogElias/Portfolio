@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -24,5 +24,12 @@ export class NavbarResponsiveComponent {
 
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (this.isMenuVisible) {
+      this.isMenuVisible = false;
+    }
   }
 }
