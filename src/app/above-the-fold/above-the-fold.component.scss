@@ -8,7 +8,7 @@
 
     h1 {
         font-family: Anta;
-        font-size: 88px;
+        font-size: 80px;
         color: #F8F5EC;
         text-align: center;
     }
@@ -65,6 +65,14 @@
 
 .above-the-fold-resp-menue {
     display: none;
+}
+
+.above-the-fold-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
 }
 
 @media screen and (max-width: 1470px) {
@@ -137,33 +145,34 @@
 }
 
 @media screen and (max-width: 850px) {
-    :host{
+    :host {
         width: 610px;
     }
-    .above-the-fold-resp-menue{
+
+    .above-the-fold-resp-menue {
         width: 100%;
         position: sticky;
         top: 0;
         z-index: 9999;
     }
 
-    .above-the-fold-portrait{
+    .above-the-fold-portrait {
         width: 600px;
         height: 573px;
     }
 
-    .menu-dropdown{
+    .menu-dropdown {
         width: 630px;
         height: 590px;
     }
- }
+}
 
- @media screen and (max-width: 640px) {
-    :host{
+@media screen and (max-width: 640px) {
+    :host {
         width: 450px;
     }
-   
-    .above-the-fold-portrait{
+
+    .above-the-fold-portrait {
         width: 450px;
         height: 470px;
         background-size: contain;
@@ -173,33 +182,50 @@
         width: 450px;
         height: 470px;
     }
- }
+}
 
- @media screen and (max-width: 500px) {
-    :host{
-      width: 100%;
+@media screen and (max-width: 500px) {
+    :host {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .above-the-fold-navbar-respo{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .above-the-fold-container {
+        width: 310px;
         display: flex;
         justify-content: center;
+        align-items: center;
+
+        h1 {
+        font-family: Anta;
+        font-size: 60px;
+        color: #F8F5EC;
+        text-align: center;
+    }
     }
 
-    .above-the-fold-container{
-        width: 310px;
-    }
-    .above-the-fold-portrait{
+    .above-the-fold-portrait {
         width: 310px;
         height: 303px;
         background-position: center;
 
-        img{
+        img {
             width: 270px;
             height: 285px;
             object-fit: cover;
             transform: scale(1.09);
-        };
-    }
+        }
 
-    .menu-dropdown{
+        ;
+    }
+    .menu-dropdown {
         width: 295px;
         height: 310px;
     }
- }
+}
