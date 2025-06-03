@@ -125,7 +125,6 @@
 
 @media screen and (max-width: 850px) {
     .single-project-content {
-        width: 610px;
         flex-direction: column-reverse;
     }
 
@@ -190,36 +189,28 @@
 }
 
 @media screen and (max-width: 640px) {
-    .single-project-content {
-        width: 430px;
-    }
-
     .single-project-details-testingButtons-respo {
         width: 430px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    :host {
-        width: 310px !important;
-    }
-
-    .single-project-content {
-        width: 310px !important;
-    }
-
     .single-project-description-detail {
         padding-right: 16px;
         padding-bottom: 16px;
     }
 
     .single-project-details-testingButtons-respo {
-        width: 310px;
+        width: 290px;
+    }
+
+    .single-project-details{
+        padding-right: 0;;
     }
 
     .single-project-details-pictureProject {
-        width: 289px;
-        height: 184px;
+        width: 250px;
+        height: 170px;
     }
 
     .single-project-description-detail-title {
@@ -237,5 +228,9 @@
         span {
             padding-right: 8px;
         }
+    }
+    
+    .single-project-contet{
+        width: 250px;
     }
 }

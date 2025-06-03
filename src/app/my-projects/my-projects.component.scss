@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     color: white;
-    width: 1440px;
+    max-width: 1440px;
 }
 
 .my-projects-navbar {
@@ -67,23 +67,6 @@
     background-color: #2D383F;
 }
 
-@media screen and (max-width: 1470px) {
-    .my-projects-projects {
-        width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1230px) {
-    .my-projects-projects {
-        width: 800px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .my-projects-projects {
-        width: 610px;
-    }
-}
 
 @media screen and (max-width: 640px) {
     :host {
@@ -91,10 +74,6 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-    }
-
-    .my-projects-projects {
-        width: 450px;
     }
 
     .my-projects-navbar {
@@ -108,7 +87,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 310px !important;
         margin-top: 64px;
     }
 
@@ -128,10 +106,6 @@
     }
 
     .my-projects-projects-activeproject {
-        width: 310px;
-    }
-
-    .my-projects-projects {
         width: 310px;
     }
 }
