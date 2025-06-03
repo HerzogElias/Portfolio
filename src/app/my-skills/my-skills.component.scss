@@ -57,7 +57,6 @@
 
 .my-skills-learningprogramming-detail {
     width: 80%;
-
     color: #FFFDFD;
     font-family: 'Josefin Sans';
     font-size: 18px;
@@ -114,7 +113,6 @@
     .my-skills-learningprogramming-respo-content {
         display: flex;
         gap: 16px;
-        width: 100%;
     }
 
     .my-skills-learningprogramming-respo-programming {
@@ -124,18 +122,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 170px;
         height: 100px;
     }
 }
 
 @media screen and (max-width: 640px) {
-    :host{
+    :host {
         display: flex;
         justify-content: center;
         align-content: center;
         margin: auto;
     }
+
     .my-skills-component {
         display: flex;
     }
@@ -146,36 +144,29 @@
     :host {
         display: flex;
         justify-content: center;
-        width: 310px;
-    
     }
 
     .my-skills-component {
-        width: 310px !important;
         scroll-margin-top: 60px;
-
         h3 {
             font-size: 45px;
             font-weight: 300;
         }
     }
 
-    .my-skills-icons {
-        width: 310px;
+    .my-skills-icons{
+        width: 290px;
     }
+
 
     .my-skills-learningprogramming-respo-content {
         margin-top: 16px;
-        gap: 8px;
-        max-width: 310px;
+        gap:8px;
     }
 
     .my-skills-learningprogramming-respo-programming {
         background-size: contain;
-    
+
     }
 
-    .my-skills-learningprogramming-respo-title{
-        max-width: 310px;
-    }
 }
