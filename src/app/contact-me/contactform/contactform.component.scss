@@ -194,10 +194,6 @@ a {
 }
 
 @media screen and (max-width: 640px) {
-  :host {
-    width: 450px;
-  }
-
   .contact-thankyou-overlay {
     width: 450px;
   }
@@ -214,10 +210,6 @@ a {
 }
 
 @media screen and (max-width:500px) {
-  :host {
-    width: 310px;
-  }
-
   .contact-component {
     width: 310px;
   }

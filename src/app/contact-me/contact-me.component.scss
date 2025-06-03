@@ -6,7 +6,7 @@
 }
 
 .contact-component {
-    width: 1440px;
+    max-width: 1440px;
     gap: 24px;
 }
 
@@ -48,35 +48,16 @@
 }
 
 
-@media screen and (max-width: 1470px) {
-    .contact-component {
-        width: 1200px;
-    }
-}
-
 @media screen and (max-width: 1230px) {
-    .contact-component {
-        width: 800px;
-    }
-
     .contact-text {
         width: 100%
     }
 }
 
-@media screen and (max-width: 850px) {
-    .contact-component {
-        width: 610px;
-    }
-}
 
 @media screen and (max-width: 640px) {
     :host {
         margin-left: 16px;
-    }
-
-    .contact-component {
-        width: 430px;
     }
 }
 
@@ -92,8 +73,6 @@
     }
     
    .contact-component{
-    width: 310px;
-
     h3{
         font-size: 45px;
         font-weight: 300;
