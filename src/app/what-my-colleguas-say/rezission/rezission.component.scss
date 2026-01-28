@@ -45,6 +45,10 @@ a {
 
 .rezessionen-text {
     width: 75%;
+
+    span{
+        font-family: 'Josefin Sans';
+    }
 }
 
 .projekt-container {
@@ -62,9 +66,8 @@ a {
 
 .projekt-name {
     color: #89BCD9;
-    font-size: 'Josefin Sans';
+    font-family: 'Joesfin Sans';
     font-weight: 400;
-    font-weight: 18px;
 }
 
 @media screen and (max-width: 1230px) {

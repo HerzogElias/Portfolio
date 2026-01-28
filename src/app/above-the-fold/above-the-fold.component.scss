@@ -33,6 +33,7 @@
         width: 550px;
         height: 710px;
         border-radius: 50%;
+        object-fit: cover;
     }
 }
 
@@ -89,7 +90,6 @@
         }
     }
 }
-
 @media screen and (max-width: 1230px) {
     .above-the-fold-container {
         gap: 32px;
@@ -148,6 +148,9 @@
         z-index: 9999;
     }
 
+    .above-the-fold-container{
+        max-height: 100vh;
+    }
     .above-the-fold-portrait {
         width: 600px;
         height: 573px;
