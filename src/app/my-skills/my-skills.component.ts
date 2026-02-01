@@ -4,23 +4,34 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
-  imports: [CommonModule,TranslateModule],
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: './my-skills.component.html',
-  styleUrl: './my-skills.component.scss'
+  styleUrls: ['./my-skills.component.scss']
 })
 export class MySkillsComponent {
-  iconsFrondend:string[] =
-  [
-    '/img/myskills/angular.png',
-    '/img/myskills/typescript.png',
-    '/img/myskills/javascript.png',
-    '/img/myskills/html.png',
-    '/img/myskills/css.png',
-    '/img/myskills/api.png',
-    '/img/myskills/firebase.png',
-    '/img/myskills/git.png',
-    '/img/myskills/material.png',
-    '/img/myskills/scrum.png'
-  ]
-}
 
+  iconsFrontend = [
+    { src: '/img/myskills/angular.png', label: 'Angular' },
+    { src: '/img/myskills/typescript.png', label: 'TypeScript' },
+    { src: '/img/myskills/javascript.png', label: 'JavaScript' },
+    { src: '/img/myskills/html.png', label: 'HTML' },
+    { src: '/img/myskills/css.png', label: 'CSS' },
+    { src: '/img/myskills/api.png', label: 'REST API' },
+    { src: '/img/myskills/firebase.png', label: 'Firebase' },
+    { src: '/img/myskills/git.png', label: 'Git' },
+    { src: '/img/myskills/material.png', label: 'Angular Material' },
+    { src: '/img/myskills/scrum.png', label: 'Scrum' }
+  ];
+
+  iconsBackend = [
+    { src: '/img/myskills/cd.png', label: 'CI / CD' },
+    { src: '/img/myskills/cloud.png', label: 'Cloud' },
+    { src: '/img/myskills/docker.png', label: 'Docker' },
+    { src: '/img/myskills/flask.png', label: 'Flask' },
+    { src: '/img/myskills/python.png', label: 'Python' },
+    { src: '/img/myskills/linux.png', label: 'Linux' },
+    { src: '/img/myskills/sec.png', label: 'IT Security' },
+    { src: '/img/myskills/yaml.png', label: 'YAML' }
+  ];
+}

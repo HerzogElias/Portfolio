@@ -1,22 +1,35 @@
-<div class="my-skills-component" id="skills" data-aos="fade-right, data-aos-offset=700">
+<div class="my-skills-component" id="skills" data-aos="fade-right" data-aos-offset="700">
   <div class="my-skills-title">
-    <h3>{{'mySkills.header'|translate}}</h3>
+    <h3>{{'mySkills.header' | translate}}</h3>
   </div>
- 
 
   <div class="my-skills-content">
+
+    <!-- Frontend & Backend Icons -->
     <div class="my-skills-icons">
-      @for (item of iconsFrondend; track $index) {
-      <div data-aos="flip-down">
-        <img [src]="item" alt="Skill {$index}">
-      </div>
+
+      @for (item of iconsFrontend; track $index) {
+        <div class="skill-item" data-aos="flip-down">
+          <img [src]="item.src" [alt]="item.label">
+          <p>{{ item.label }}</p>
+        </div>
       }
+
+      @for (item of iconsBackend; track $index) {
+        <div class="skill-item" data-aos="flip-down">
+          <img [src]="item.src" [alt]="item.label">
+            <p>{{ item.label }}</p>
+        </div>
+      }
+
     </div>
+
+    <!-- Learning / Programming Section -->
     <div class="my-skills-learningprogramming-respo">
-      <h5>{{'mySkills.learningProgramming.title'|translate}}</h5>
+      <h5>{{'mySkills.learningProgramming.title' | translate}}</h5>
       <div class="my-skills-learningprogramming-respo-content">
         <div class="my-skills-learningprogramming-respo-title">
-          {{'mySkills.learningProgramming.goal'|translate}}
+          {{'mySkills.learningProgramming.goal' | translate}}
         </div>
         <div class="my-skills-learningprogramming-respo-programming">
           <img src="/img/myskills/terminal.png" alt="terminal">
@@ -24,21 +37,6 @@
         </div>
       </div>
     </div>
-    <div class="my-skills-learningprogramming">
-      <div class="my-skills-learningprogramming-detail">
-        <div>
-          <p>{{'mySkills.learningProgramming.title'|translate}}</p>
-        </div>
 
-        <div class="my-skills-learningprogramming-icons">
-          <img src="/img/myskills/terminal.png" alt="terminal">
-          <img src="/img/myskills/itsec.png" alt="it security">
-        </div>
-
-        <div>
-          <p>{{'mySkills.learningProgramming.goal'|translate}}</p>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
