@@ -14,6 +14,7 @@ import * as AOS from 'aos';
 
 
 export class MyProjectsComponent{
+  fadeclass: string = 'fade-in';
   projects: Projekt[] = [{
     projectname: 'Join',
     technologies: 'HTML, CSS, Javascript',

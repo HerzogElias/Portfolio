@@ -31,41 +31,121 @@
     max-width: 1440px;
 }
 
-.my-projects-navbar {
-    display: flex;
-    width: 100%; // Geändert von 400px
-    align-items: center;
-    cursor: pointer;
-    min-height: 60px; // Neu: alle Tabs gleich hoch
-
-    p {
-        color: #89BCD9;
-        font-family: 'Josefin Sans';
-        font-weight: 500;
-        font-size: 30px;
-        padding-left: 15px;
-    }
-
-    &.active {
-        background-color: #2D383F;
-
-        p {
-            color: white;
-        }
-    }
-}
-
 .my-projects-projects-description {
-    display: grid; // Geändert von flex
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Neu: dynamisches Grid
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
-    width: 100%; // Neu: volle Breite nutzen
+    width: 100%;
 }
 
 .my-projects-projects-activeproject {
     background-color: #2D383F;
 }
 
+// ==================== BASE NAVBAR STYLES (Desktop - über 900px) ====================
+.my-projects-navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    min-height: 60px;
+    transition: all 0.3s ease;
+
+    .project-logo {
+        display: none; // Logo standardmäßig versteckt (Desktop)
+    }
+
+    .project-name {
+        color: #89BCD9;
+        font-family: 'Josefin Sans';
+        font-weight: 500;
+        font-size: 30px;
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    &.active {
+        background-color: #2D383F;
+
+        .project-name {
+            color: white;
+        }
+    }
+}
+
+// ==================== UNTER 900px: LOGOS MIT OVERLAY-HOVER ====================
+@media screen and (max-width: 900px) {
+    .my-projects-navbar {
+        border-radius: 8px;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        .project-logo {
+            display: block; // Logo anzeigen unter 900px
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .project-name {
+            transform: translateY(-50%) translateX(-10px);
+            background: rgba(0, 0, 0, 0.95);
+            color: #89BCD9;
+            padding: 10px 16px;
+            padding-left: 16px !important;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            margin: 0;
+
+            // Kleiner Pfeil links
+            &::before {
+                content: '';
+                position: absolute;
+                left: -8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px 8px 8px 0;
+                border-color: transparent rgba(0, 0, 0, 0.95) transparent transparent;
+            }
+        }
+
+        &:hover {
+            background-color: rgba(137, 188, 217, 0.15);
+
+            .project-logo {
+                transform: scale(1.15);
+            }
+
+            .project-name {
+                opacity: 1;
+                transform: translateY(-50%) translateX(5px);
+            }
+        }
+
+        &.active {
+            background-color: #2D383F;
+
+            .project-name {
+                color: white;
+            }
+        }
+    }
+}
+
+// ==================== UNTER 640px ====================
 @media screen and (max-width: 640px) {
     :host {
         display: flex;
@@ -75,22 +155,27 @@
     }
 
     .my-projects-navbar {
-        width: 100%; // Geändert von 150px
+        width: 100%;
         height: 72px;
+
+        .project-logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .project-name {
+            font-size: 16px;
+        }
     }
 }
 
+// ==================== UNTER 500px ====================
 @media screen and (max-width: 500px) {
     :host {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 64px;
     }
 
     .my-projects-component {
-        justify-content: center;
-        align-items: center;
         scroll-margin-top: 60px;
 
         h3 {
@@ -101,6 +186,19 @@
 
     .my-projects-projects-description {
         gap: 0;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); // Neu: kleinere Mindestbreite für Mobile
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .my-projects-navbar {
+        .project-logo {
+            width: 35px;
+            height: 35px;
+        }
+
+        .project-name {
+            font-size: 14px;
+            padding: 8px 12px;
+            padding-left: 12px !important;
+        }
     }
 }

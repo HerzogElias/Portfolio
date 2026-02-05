@@ -1,20 +1,26 @@
 <div class="my-projects-component" id="projects">
-    <h3>{{'myProjects.header' |translate}}</h3>
+    <h3>{{'myProjects.header' | translate}}</h3>
     <div class="my-projects-content">
         <div class="my-projects-projects">
             <div class="my-projects-projects-description">
                 @for (item of projectnavbar; track $index) {
                     <div 
-                    class="my-projects-navbar" 
-                    [ngClass]="{'active': activeProject.projectname === item}"
-                  >
-                  <p (click)="changeIndex($index)">{{ $index + 1 }}. {{ item }}</p>
-                </div>
+                        class="my-projects-navbar slide-in"
+                        [ngClass]="{'active': activeProject.projectname === item}"
+                        (click)="changeIndex($index)"
+                    >
+                        <img 
+                            [src]="'assets/img/projects/' + item.toLowerCase() + '-logo.png'" 
+                            [alt]="item + ' Logo'" 
+                            class="project-logo"
+                        >
+                        <p class="project-name">{{ $index + 1 }}. {{ item }}</p>
+                    </div>
                 }
             </div>
         </div>
-        <div class="my-projects-projects-activeproject" ngClass="[fadeclass]">
+        <div class="my-projects-projects-activeproject" [ngClass]="[fadeclass]">
             <app-single-project [project]="activeProject"></app-single-project>
         </div>
     </div>
-</div> 
+</div>
