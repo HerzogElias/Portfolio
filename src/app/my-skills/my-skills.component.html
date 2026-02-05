@@ -8,17 +8,10 @@
     <!-- Frontend & Backend Icons -->
     <div class="my-skills-icons">
 
-      @for (item of iconsFrontend; track $index) {
+      @for (item of skills; track $index) {
         <div class="skill-item" data-aos="flip-down">
           <img [src]="item.src" [alt]="item.label">
           <p>{{ item.label }}</p>
-        </div>
-      }
-
-      @for (item of iconsBackend; track $index) {
-        <div class="skill-item" data-aos="flip-down">
-          <img [src]="item.src" [alt]="item.label">
-            <p>{{ item.label }}</p>
         </div>
       }
 

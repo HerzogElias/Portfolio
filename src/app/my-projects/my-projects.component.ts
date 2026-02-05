@@ -41,15 +41,15 @@ export class MyProjectsComponent{
     livetest: 'https://dukessharkygame.elias-herzog.de/'
   },
     {
-    projectname: 'DevSecOps Knowlegebase',
+    projectname: 'DevSecOps Blog',
     technologies: 'React, Docusaurus, CI/CD',
     content: {
-      aboutTheProject: 'myProjects.sharky.aboutTheProject',
-      organisation: 'myProjects.sharky.organisation',
-      whatILearned: 'myProjects.sharky.whatILearned'
+      aboutTheProject: 'myProjects.dsoblog.aboutTheProject',
+      organisation: 'myProjects.dsoblog.organisation',
+      whatILearned: 'myProjects.dsoblog.whatILearned'
     },
-    images: ['/img/myskills/html.png','/img/myskills/css.png', '/img/myskills/javascript.png' ],
-    imageProject: ['/img/myprojects/Sharkygame.jpg'],
+    images: ['/img/myskills/react.png','/img/myskills/docusaurus.png', '/img/myskills/cd.png' ],
+    imageProject: ['/img/myprojects/DSO-Portfolio.png'],
     github: 'https://github.com/HerzogElias/DSO-Portfolio',
     livetest: 'https://devsecops-knowledgebase.elias-herzog.de/'
   }
@@ -57,7 +57,7 @@ export class MyProjectsComponent{
 
   activeProject = this.projects[0];
 
-  projectnavbar: string[] = ['DSO Portfolio','Join', 'Sharky', 'Test']
+  projectnavbar: string[] = ['Join', 'Sharky', 'DevSecOps Blog']
   
 
 

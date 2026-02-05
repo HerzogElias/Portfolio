@@ -1,82 +1,82 @@
 {
-    "navbar": {
-      "whyMe": "Warum ich?",
-      "skills": "Fähigkeiten",
-      "projects": "Projekte",
-      "contact": "Kontakt"
+  "navbar": {
+    "whyMe": "Warum ich?",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "aboveTheFold": {
+    "name": "Elias Herzog",
+    "role": "Frontend Entwickler & DevSecOps Engineer"
+  },
+  "whyMe": {
+    "header": "Warum ich?",
+    "text": "Ich bin motiviert, meine Skills stetig zu erweitern und mich kontinuierlich in neue Technologien einzuarbeiten. Es ist faszinierend, wie schnell sich die Welt verändert, und ich will mit dieser Dynamik Schritt halten. Jede neue Fähigkeit, die ich erlerne, bringt mich nicht nur beruflich weiter, sondern lässt mich auch persönlich wachsen. Ich freue mich darauf, immer wieder neue Herausforderungen anzunehmen und aus jedem Schritt zu lernen. Es gibt so viel, das ich entdecken kann, und ich bin entschlossen, meine Expertise genau dort einzubringen, wo sie den größten Unterschied macht.",
+    "location": "Wohnhaft in Marienheide",
+    "contactButton": "Lass uns reden"
+  },
+  "mySkills": {
+    "header": "Meine Fähigkeiten",
+    "learningProgramming": {
+      "title": "Ich bin stetig dabei, mich weiterzuentwickeln:",
+      "goal": "Mein Ziel ist es, meine Fähigkeiten kontinuierlich zu verbessern und mich in den neuesten Technologien weiterzuentwickeln"
+    }
+  },
+  "myProjects": {
+    "header": "Meine Projekte",
+    "aboutTheProject": "Über das Projekt:",
+    "organisation": "Organisation des Projektes:",
+    "whatILearned": "Lernziel aus dem Projekt",
+    "technologies": "Technologien",
+    "join": {
+      "aboutTheProject": "Join hilft dir als richtiges Aufgabentool, deine Aufgaben mit einem Scrum-Board zu pflegen, sowie deine Kontakte zu verwalten.",
+      "organisation": "Durch eine Gruppenarbeit mit 3 Personen wurden die Aufgaben mit der Hilfe eines Scrum-Boards gemanaged und regelmäßige Termine gepflegt.",
+      "whatILearned": "Durch das Projekt habe ich erste Berührungspunkte mit Firebase erhalten und gelernt, wie man ein Projekt mit der Scrum-Methode managt."
     },
-
-    "aboveTheFold": {
-      "name": "Elias Herzog",
-      "role": "Frontend Entwickler & DevSecOps Engineer"
+    "sharky": {
+      "aboutTheProject": "Mit der Hilfe von objektorientiertem JavaScript wurde ein 2D-Spiel programmiert. Hilf dem Sharky, Gift zu sammeln, um den Endboss zu besiegen.",
+      "organisation": "Selbstständige Organisierung und Priorisierung von Aufgaben",
+      "whatILearned": "Erste tiefgehende Erfahrungen mit objektorientierter JavaScript-Programmierung und mit Canvas."
     },
-
-    "whyMe": {
-        "header": "Warum ich?",
-        "text": "Ich bin motiviert, meine Skills stetig zu erweitern und mich kontinuierlich in neue Technologien einzuarbeiten. Es ist faszinierend, wie schnell sich die Welt verändert, und ich will mit dieser Dynamik Schritt halten. Jede neue Fähigkeit, die ich erlerne, bringt mich nicht nur beruflich weiter, sondern lässt mich auch persönlich wachsen. Ich freue mich darauf, immer wieder neue Herausforderungen anzunehmen und aus jedem Schritt zu lernen. Es gibt so viel, das ich entdecken kann, und ich bin entschlossen, meine Expertise genau dort einzubringen, wo sie den größten Unterschied macht.",
-        "location": "Wohnhaft in Marienheide",
-        "contactButton": "Lass uns reden"
+    "dsoblog": {
+      "aboutTheProject": "Dieses Projekt beinhaltet eine eigene Knowlegebase die mit der Hilfe von React und Docusaurus umgesetzt wurde",
+      "organisation": "Erstellung der Projektarchitektur und Orchestrierung einer strukturierten Datei- und Ordnerhierarchie für eine systematische Projektentwicklung.",
+      "whatILearned": "Selbstständiges Erarbeiten in die Libary React und Docusaurus."
+    }
+  },
+  "whatMyColleguasSay": {
+    "header": {
+      "eins": "Teamplayer benötigt?",
+      "zwei": "Das sagen meine Kollegen über mich",
+      "linkedin": "LinkedIn Profil"
+    },
+    "projecttitle": "Projekt",
+    "teamPlayer": {
+      "florian": {
+        "name": "Florian Zunke",
+        "project": "Join",
+        "feedback": "Elias hat während unserer Projektarbeit komplexen und sauberen Code geschrieben, wodurch er es gut vorangebracht hat. Durch seine nette und freundliche Art war die Zusammenarbeit sehr angenehm.",
+        "linkedin": "https://www.linkedin.com/in/florian-zunke-b18420328/"
       },
-    
-    "mySkills": {
-      "header": "Meine Fähigkeiten",
-      "learningProgramming": {
-        "title": "Ich bin stetig dabei, mich weiterzuentwickeln:",
-        "goal": "Mein Ziel ist es, meine Fähigkeiten kontinuierlich zu verbessern und mich in den neuesten Technologien weiterzuentwickeln"
+      "kai": {
+        "name": "Kai Schulz",
+        "project": "Sharky",
+        "feedback": "Ich stand mit Elias in regem Austausch zu seinem Sharky-Projekt. Die Absprache war stets informativ und von gegenseitiger Wertschöpfung. Wir konnten einander gut auf mögliche Verbesserungen im Code hinweisen und ich bin mit der Zusammenarbeit sehr zufrieden.",
+        "linkedin": "https://www.linkedin.com/in/kai-schulz-53207b1a6/"
       }
+    }
+  },
+  "contact": {
+    "privacy": {
+      "eins": "Ich akzeptiere die",
+      "zwei": "Datenschutzverordnung"
     },
-    "myProjects": {
-      "header": "Meine Projekte",
-      "aboutTheProject":"Über das Projekt:",
-      "organisation":"Organisation des Projektes:",
-      "whatILearned":"Lernziel aus dem Projekt",
-      "technologies":"Technologien",
-      "join": {
-        "aboutTheProject": "Join hilft dir als richtiges Aufgabentool, deine Aufgaben mit einem Scrum-Board zu pflegen, sowie deine Kontakte zu verwalten.",
-        "organisation": "Durch eine Gruppenarbeit mit 3 Personen wurden die Aufgaben mit der Hilfe eines Scrum-Boards gemanaged und regelmäßige Termine gepflegt.",
-        "whatILearned": "Durch das Projekt habe ich erste Berührungspunkte mit Firebase erhalten und gelernt, wie man ein Projekt mit der Scrum-Methode managt."
-      },
-      "sharky": {
-        "aboutTheProject": "Mit der Hilfe von objektorientiertem JavaScript wurde ein 2D-Spiel programmiert. Hilf dem Sharky, Gift zu sammeln, um den Endboss zu besiegen.",
-        "organisation": "Noch in Arbeit. Wir haben uns gut auf Verbesserungen im Code geeinigt.",
-        "whatILearned": "Erste tiefgehende Erfahrungen mit objektorientierter JavaScript-Programmierung und mit Canvas."
-      }
-    },
-    "whatMyColleguasSay": {
-      "header": {
-        "eins": "Teamplayer benötigt?",
-        "zwei": "Das sagen meine Kollegen über mich",
-        "linkedin": "LinkedIn Profil"
-      },
-      "projecttitle": "Projekt",
-      "teamPlayer": {
-        "florian": {
-          "name": "Florian Zunke",
-          "project": "Join",
-          "feedback": "Elias hat während unserer Projektarbeit komplexen und sauberen Code geschrieben, wodurch er es gut vorangebracht hat. Durch seine nette und freundliche Art war die Zusammenarbeit sehr angenehm.",
-          "linkedin": "https://www.linkedin.com/in/florian-zunke-b18420328/"
-        },
-        "kai": {
-          "name": "Kai Schulz",
-          "project": "Sharky",
-          "feedback": "Ich stand mit Elias in regem Austausch zu seinem Sharky-Projekt. Die Absprache war stets informativ und von gegenseitiger Wertschöpfung. Wir konnten einander gut auf mögliche Verbesserungen im Code hinweisen und ich bin mit der Zusammenarbeit sehr zufrieden.",
-          "linkedin": "https://www.linkedin.com/in/kai-schulz-53207b1a6/"
-        }
-      }
-    },  
-      "contact": {
-        "privacy":{
-          "eins": "Ich akzeptiere die",
-          "zwei": "Datenschutzverordnung"
-        },
-        "header": "Kontakt",
-        "text": "Kontaktieren Sie mich: Melden Sie sich gerne um mit mir in Kontakt zu treten. Gerne besprechen wir weitere Details. Ich bin offen für Stellen im Frontend-Bereich. Kontakt: contact@elias-herzog.de"
-      }
-  ,
-      "imprint": {
-        "header": "Impressum",
-        "contact": "Kontakt",
-         "mobile": "Mobil:"
-      }
+    "header": "Kontakt",
+    "text": "Kontaktieren Sie mich: Melden Sie sich gerne um mit mir in Kontakt zu treten. Gerne besprechen wir weitere Details. Ich bin offen für Stellen im Frontend-Bereich. Kontakt: contact@elias-herzog.de"
+  },
+  "imprint": {
+    "header": "Impressum",
+    "contact": "Kontakt",
+    "mobile": "Mobil:"
   }
-  
+}
