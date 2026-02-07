@@ -27,7 +27,7 @@
 .my-projects-projects {
     display: flex;
     align-items: center;
-    color: white;
+     color: #FFFDFD;
     max-width: 1440px;
 }
 
@@ -42,7 +42,6 @@
     background-color: #2D383F;
 }
 
-// ==================== BASE NAVBAR STYLES (Desktop - über 900px) ====================
 .my-projects-navbar {
     display: flex;
     width: 100%;
@@ -52,7 +51,7 @@
     transition: all 0.3s ease;
 
     .project-logo {
-        display: none; // Logo standardmäßig versteckt (Desktop)
+        display: none;
     }
 
     .project-name {
@@ -68,78 +67,79 @@
         background-color: #2D383F;
 
         .project-name {
-            color: white;
+             color: #FFFDFD;
         }
     }
 }
 
-// ==================== UNTER 900px: LOGOS MIT OVERLAY-HOVER ====================
 @media screen and (max-width: 900px) {
     .my-projects-navbar {
         border-radius: 8px;
         position: relative;
-        justify-content: center;
-        display: flex;
-        align-items: center;
+        overflow: hidden;
+        background-color: rgba(45, 56, 63, 0.3);
+        padding: 0;
+
+        .project-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         .project-logo {
-            display: block; // Logo anzeigen unter 900px
+            display: block;
             width: 45px;
             height: 45px;
             object-fit: contain;
-            transition: transform 0.3s ease;
+            transition: opacity 0.3s ease;
+            position: relative;
+            z-index: 1;
         }
 
         .project-name {
-            transform: translateY(-50%) translateX(-10px);
-            background: rgba(0, 0, 0, 0.95);
-            color: #89BCD9;
-            padding: 10px 16px;
-            padding-left: 16px !important;
-            border-radius: 8px;
-            font-size: 18px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9));
+            color:#89BCD9;
+            font-size: 16px;
             font-weight: 600;
             white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            z-index: 10;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            z-index: 2;
             margin: 0;
-
-            // Kleiner Pfeil links
-            &::before {
-                content: '';
-                position: absolute;
-                left: -8px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 8px 8px 8px 0;
-                border-color: transparent rgba(0, 0, 0, 0.95) transparent transparent;
-            }
+            padding: 0 8px;
+            padding-left: 8px !important;
         }
 
         &:hover {
-            background-color: rgba(137, 188, 217, 0.15);
-
             .project-logo {
-                transform: scale(1.15);
+                opacity: 0.3;
             }
 
             .project-name {
-                opacity: 1;
-                transform: translateY(-50%) translateX(5px);
+                transform: translateY(0);
             }
         }
 
         &.active {
             background-color: #2D383F;
 
+            .project-logo {
+                opacity: 0.3;
+            }
+
             .project-name {
-                color: white;
+                transform: translateY(0);
             }
         }
     }
@@ -164,7 +164,7 @@
         }
 
         .project-name {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
@@ -196,9 +196,7 @@
         }
 
         .project-name {
-            font-size: 14px;
-            padding: 8px 12px;
-            padding-left: 12px !important;
+            font-size: 12px;
         }
     }
 }

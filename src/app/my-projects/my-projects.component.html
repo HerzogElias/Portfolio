@@ -9,12 +9,14 @@
                         [ngClass]="{'active': activeProject.projectname === item}"
                         (click)="changeIndex($index)"
                     >
-                        <img 
-                            [src]="'assets/img/projects/' + item.toLowerCase() + '-logo.png'" 
-                            [alt]="item + ' Logo'" 
-                            class="project-logo"
-                        >
-                        <p class="project-name">{{ $index + 1 }}. {{ item }}</p>
+                        <div class="project-content">
+                            <img 
+                                [src]="'/img/myprojects/' + item.toLowerCase() + '-logo.png'" 
+                                [alt]="item + ' Logo'" 
+                                class="project-logo"
+                            >
+                            <p class="project-name">{{ $index + 1 }}. {{ item }}</p>
+                        </div>
                     </div>
                 }
             </div>
